@@ -1,0 +1,52 @@
+{
+    "case": "35",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/redirects/map.example.org",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRedirectVO",
+                    "source": "/",
+                    "destination": "https://map.example.com/",
+                    "type": "permanent",
+                    "subDomainName": "map.example.org",
+                    "matchingType": "prefix",
+                    "sort": 1,
+                    "id": 90002,
+                    "modified": "2022-08-31T15:54:24+0200",
+                    "created": "2022-08-31T15:54:24+0200",
+                    "comment": "redacted-1",
+                    "enabled": true
+                },
+                {
+                    "objectType": "DnsRedirectVO",
+                    "source": "/__probe__/redirect",
+                    "destination": "https://map.example.org/__probe__/target2",
+                    "type": "redirect",
+                    "subDomainName": "map.example.org",
+                    "matchingType": "exact",
+                    "sort": 0,
+                    "id": 90003,
+                    "modified": "2026-10-16T16:04:29+0200",
+                    "created": "2026-10-16T16:04:28+0200",
+                    "enabled": false
+                }
+            ],
+            "page": 1,
+            "count": 2,
+            "pageSize": 50
+        }
+    },
+    "finding": "list after the update"
+}

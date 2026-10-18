@@ -1,0 +1,24 @@
+{
+    "case": "160",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/certificates/example.org/1",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 0,
+            "pageSize": 50,
+            "list": []
+        }
+    },
+    "finding": "a domain without certificates"
+}

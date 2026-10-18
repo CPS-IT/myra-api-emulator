@@ -1,0 +1,11 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - public
+        - tests
+    tmpDir: .cache/phpstan
+    checkUninitializedProperties: true
+    checkImplicitMixed: true
+    checkBenevolentUnionTypes: true
+    reportUnmatchedIgnoredErrors: true

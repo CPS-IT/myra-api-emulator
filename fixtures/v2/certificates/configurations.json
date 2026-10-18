@@ -1,0 +1,45 @@
+{
+    "case": "164",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/ssl-configurations",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "name": "redacted-5"
+                },
+                {
+                    "name": "redacted-10",
+                    "ciphers": "redacted-11",
+                    "tls13Ciphers": "redacted-12",
+                    "protocols": "redacted-13"
+                },
+                {
+                    "name": "redacted-14",
+                    "tls13Ciphers": "redacted-12",
+                    "protocols": "TLSv1.3"
+                },
+                {
+                    "name": "redacted-15",
+                    "ciphers": "redacted-16",
+                    "tls13Ciphers": "redacted-12",
+                    "protocols": "redacted-13"
+                }
+            ],
+            "page": 1,
+            "count": 4,
+            "pageSize": 50
+        }
+    },
+    "finding": "Myra's SSL configurations (name, ciphers, tls13Ciphers, protocols; names and cipher lists redacted by the anonymiser)"
+}

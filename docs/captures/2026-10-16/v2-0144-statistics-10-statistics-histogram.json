@@ -1,0 +1,133 @@
+{
+    "case": "144",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/histogram/1792051200/1792058399/total-requests/hourly/0/1",
+        "body": {
+            "domains": [
+                "example.com"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "group": {
+                "ALL-1000": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": null
+                    }
+                },
+                "api.example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": [
+                            {
+                                "x": 1792051200000,
+                                "y": 1323
+                            },
+                            {
+                                "x": 1792054800000,
+                                "y": 1324
+                            }
+                        ]
+                    }
+                },
+                "api.staging.example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": [
+                            {
+                                "x": 1792051200000,
+                                "y": 1325
+                            },
+                            {
+                                "x": 1792054800000,
+                                "y": 1326
+                            }
+                        ]
+                    }
+                },
+                "map.example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": null
+                    }
+                },
+                "example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": [
+                            {
+                                "x": 1792051200000,
+                                "y": 1327
+                            },
+                            {
+                                "x": 1792054800000,
+                                "y": 1328
+                            }
+                        ]
+                    }
+                },
+                "staging.example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": [
+                            {
+                                "x": 1792051200000,
+                                "y": 1329
+                            },
+                            {
+                                "x": 1792054800000,
+                                "y": 1330
+                            }
+                        ]
+                    }
+                },
+                "static.example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": null
+                    }
+                },
+                "www.example.com": {
+                    "graphData": {
+                        "name": "",
+                        "max": 0,
+                        "sum": 0,
+                        "data": [
+                            {
+                                "x": 1792051200000,
+                                "y": 1331
+                            },
+                            {
+                                "x": 1792054800000,
+                                "y": 1332
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "finding": "{group: name → {graphData: {name, max, sum, data}}} per vhost + ALL-{domainId}; data null for vhosts without requests"
+}

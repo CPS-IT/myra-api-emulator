@@ -1,0 +1,74 @@
+{
+    "case": "136",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/statistics/total-domain-traffic/1792051200/1792058399",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "total_traffic": {
+                "name": "",
+                "max": 0,
+                "sum": 1177,
+                "data": [
+                    {
+                        "x": 1792051200000,
+                        "y": 1178
+                    },
+                    {
+                        "x": 1792051320000,
+                        "y": 1179
+                    },
+                    {
+                        "x": 1792051440000,
+                        "y": 1180
+                    }
+                ]
+            },
+            "total_uncached_traffic": {
+                "name": "",
+                "max": 0,
+                "sum": 1181,
+                "data": [
+                    {
+                        "x": 1792051200000,
+                        "y": 1182
+                    },
+                    {
+                        "x": 1792051320000,
+                        "y": 1183
+                    },
+                    {
+                        "x": 1792051440000,
+                        "y": 1184
+                    }
+                ]
+            },
+            "total_cached_traffic": {
+                "name": "",
+                "max": 0,
+                "sum": 1185,
+                "data": [
+                    {
+                        "x": 1792051200000,
+                        "y": 1186
+                    },
+                    {
+                        "x": 1792051320000,
+                        "y": 1187
+                    },
+                    {
+                        "x": 1792051440000,
+                        "y": 1188
+                    }
+                ]
+            }
+        }
+    },
+    "finding": "all domains: the graphs WITHOUT a graph/data wrapper"
+}

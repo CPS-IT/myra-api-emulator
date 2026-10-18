@@ -1,0 +1,38 @@
+{
+    "case": "20",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/redirects/www.example.com/1",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50,
+            "list": [
+                {
+                    "objectType": "DnsRedirectVO",
+                    "source": "redacted-641",
+                    "destination": "https://example.com/path-7",
+                    "type": "permanent",
+                    "subDomainName": "www.example.com",
+                    "matchingType": "prefix",
+                    "sort": 0,
+                    "id": 90404,
+                    "modified": "2022-06-30T16:45:08+0200",
+                    "created": "2018-09-26T10:51:21+0200",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "finding": "v1 takes a subdomain where the manual says {domain}: only that vhost's redirects"
+}

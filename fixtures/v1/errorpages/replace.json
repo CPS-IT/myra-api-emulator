@@ -1,0 +1,38 @@
+{
+    "case": "121",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/errorpages/example.org",
+        "body": {
+            "pageContent": "redacted-2",
+            "selection": {
+                "map.example.org": {
+                    "413": true
+                }
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "targetObject": [
+                {
+                    "objectType": "ErrorPageVO",
+                    "subDomainName": "map.example.org",
+                    "errorCode": 413,
+                    "content": "",
+                    "id": 90002,
+                    "modified": "2026-10-16T17:03:12+0200",
+                    "created": "2026-10-16T17:03:12+0200"
+                }
+            ]
+        }
+    },
+    "finding": "set again replaces the content (there is no update)"
+}

@@ -1,0 +1,37 @@
+{
+    "case": "27",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/redirects/map.example.org",
+        "body": {
+            "subDomainName": "map.example.org",
+            "source": "/__probe__/redirect",
+            "destination": "https://map.example.org/__probe__/stale",
+            "type": "redirect",
+            "matchingType": "exact",
+            "sort": 0,
+            "enabled": false,
+            "expertMode": false,
+            "id": 90001,
+            "modified": "2026-10-16T16:04:23+0200"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The record has been edited in the meantime."
+                }
+            ],
+            "warningList": [],
+            "targetObject": []
+        }
+    },
+    "finding": "optimistic lock: a stale modified is rejected with HTTP 200 (!) and error: true"
+}

@@ -1,0 +1,36 @@
+{
+    "case": "67",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1140/map.example.org/cache-settings/90002",
+        "body": {
+            "path": "/__probe__/",
+            "ttl": 60,
+            "type": "exact",
+            "notFoundTtl": 60,
+            "enforce": false,
+            "sort": 999,
+            "enabled": false,
+            "id": 90002,
+            "modified": "2026-10-16T16:18:42+0200"
+        }
+    },
+    "response": {
+        "status": 400,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The record has been edited in the meantime."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "stale modified: HTTP 400"
+}

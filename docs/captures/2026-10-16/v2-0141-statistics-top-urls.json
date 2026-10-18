@@ -1,0 +1,21 @@
+{
+    "case": "141",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/top-urls/1792051200/1792058399",
+        "body": {
+            "domains": [
+                "example.org"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": "null"
+    },
+    "finding": "a quiet domain: the body null (not [])"
+}

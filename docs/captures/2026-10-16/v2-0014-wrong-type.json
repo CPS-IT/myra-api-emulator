@@ -1,0 +1,34 @@
+{
+    "case": "14",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "body": {
+            "fqdn": "example.com",
+            "resource": "/__probe__/nothing.txt",
+            "recursive": "x"
+        }
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "recursive",
+                    "message": "This value should be of type boolean.",
+                    "translations": {
+                        "en": "This value should be of type boolean.",
+                        "de": "Dieser Wert sollte vom Typ boolean sein."
+                    }
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "wrong type: violation with propertyPath"
+}

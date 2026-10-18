@@ -1,0 +1,24 @@
+{
+    "case": "16",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domains?page=2",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [],
+            "page": 2,
+            "count": 2,
+            "pageSize": 50
+        }
+    },
+    "finding": "paging in v2: query parameter page is honoured (echoed as page: 2); past the last page data is empty; count is the total number of hits"
+}

@@ -1,0 +1,39 @@
+{
+    "case": "47",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/ip-filters/map.example.org",
+        "body": {
+            "subDomainName": "map.example.org",
+            "type": "BLACKLIST",
+            "value": "192.0.2.1/32",
+            "enabled": false,
+            "comment": "__probe__"
+        }
+    },
+    "response": {
+        "status": 201,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.1/32",
+                    "type": "BLACKLIST",
+                    "subDomainName": "map.example.org",
+                    "id": 90002,
+                    "modified": "2026-10-16T16:11:51+0200",
+                    "created": "2026-10-16T16:11:51+0200",
+                    "comment": "__probe__",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "finding": "v2 create: HTTP 201"
+}

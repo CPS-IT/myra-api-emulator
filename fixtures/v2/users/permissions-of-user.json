@@ -1,0 +1,487 @@
+{
+    "case": "176",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/user/90003/permissions",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90062,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90063,
+                    "modified": "2021-09-23T12:49:09+0200",
+                    "created": "2021-09-23T12:49:09+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90062,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90064,
+                    "modified": "2021-09-23T12:49:09+0200",
+                    "created": "2021-09-23T12:49:09+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90065,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90066,
+                    "modified": "2021-10-05T10:49:15+0200",
+                    "created": "2021-10-05T10:49:15+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90065,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90067,
+                    "modified": "2021-10-05T10:49:15+0200",
+                    "created": "2021-10-05T10:49:15+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90068,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90069,
+                    "modified": "2021-10-18T15:22:19+0200",
+                    "created": "2021-10-18T15:22:19+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90068,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90070,
+                    "modified": "2021-10-18T15:22:19+0200",
+                    "created": "2021-10-18T15:22:19+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90071,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90072,
+                    "modified": "2021-10-18T15:46:11+0200",
+                    "created": "2021-10-18T15:46:11+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90071,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90073,
+                    "modified": "2021-10-18T15:46:11+0200",
+                    "created": "2021-10-18T15:46:11+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90074,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90075,
+                    "modified": "2021-10-20T12:56:00+0200",
+                    "created": "2021-10-20T12:56:00+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90074,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90076,
+                    "modified": "2021-10-20T12:56:00+0200",
+                    "created": "2021-10-20T12:56:00+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DomainCacheSetting",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90077,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90078,
+                    "modified": "2022-01-10T11:25:29+0100",
+                    "created": "2022-01-10T11:25:29+0100",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DomainCacheSetting",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90077,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90079,
+                    "modified": "2022-01-10T11:25:29+0100",
+                    "created": "2022-01-10T11:25:29+0100",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90080,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90081,
+                    "modified": "2022-01-17T12:03:27+0100",
+                    "created": "2022-01-17T12:03:27+0100",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90080,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90082,
+                    "modified": "2022-01-17T12:03:27+0100",
+                    "created": "2022-01-17T12:03:27+0100",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90083,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90084,
+                    "modified": "2022-01-17T12:04:31+0100",
+                    "created": "2022-01-17T12:04:31+0100",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "DnsRedirect",
+                    "objectPermissionType": "USER",
+                    "objectInstance": 90083,
+                    "name": "www.host1.de",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90085,
+                    "modified": "2022-01-17T12:04:31+0100",
+                    "created": "2022-01-17T12:04:31+0100",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Domain",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90086,
+                    "modified": "2021-08-26T10:15:24+0200",
+                    "created": "2021-08-26T10:15:24+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "Domain",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90087,
+                    "modified": "2021-08-26T10:15:24+0200",
+                    "created": "2021-08-26T10:15:24+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Domain",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90088,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "Domain",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90089,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "CACHE_CLEAR"
+                },
+                {
+                    "objectType": "Tag",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90090,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "Tag",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90091,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Tag",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90092,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "Report",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90093,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "Report",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90094,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Report",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90095,
+                    "modified": "2021-08-26T10:15:25+0200",
+                    "created": "2021-08-26T10:15:25+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "Domain",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90096,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Organization",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90097,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Organization",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90098,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "Organization",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90099,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "Ticket",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90100,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Ticket",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90101,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "Ticket",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90102,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "Release",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90103,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "Release",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90104,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "EDIT"
+                },
+                {
+                    "objectType": "Release",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90105,
+                    "modified": "2024-07-05T15:46:28+0200",
+                    "created": "2024-07-05T15:46:28+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "Organization",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90106,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "redacted-59"
+                },
+                {
+                    "objectType": "Organization",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90107,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "redacted-60"
+                },
+                {
+                    "objectType": "Release",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90108,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "redacted-61"
+                },
+                {
+                    "objectType": "Release",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90109,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "redacted-62"
+                },
+                {
+                    "objectType": "SamlSettings",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90110,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "CREATE"
+                },
+                {
+                    "objectType": "SamlSettings",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90111,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "READ"
+                },
+                {
+                    "objectType": "SamlSettings",
+                    "objectPermissionType": "GROUP",
+                    "scopes": [],
+                    "parents": [],
+                    "id": 90112,
+                    "modified": "2026-08-13T13:21:15+0200",
+                    "created": "2026-08-13T13:21:15+0200",
+                    "action": "EDIT"
+                }
+            ],
+            "page": 1,
+            "count": 43,
+            "pageSize": 50
+        }
+    },
+    "finding": "a user's permissions: objectType (Domain, DnsRedirect, …), objectPermissionType, objectInstance, action"
+}

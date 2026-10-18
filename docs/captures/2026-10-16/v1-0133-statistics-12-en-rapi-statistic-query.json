@@ -1,0 +1,32 @@
+{
+    "case": "133",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/statistic/query",
+        "body": {
+            "query": {
+                "dataSources": {
+                    "x": {
+                        "source": "redacted-136",
+                        "type": "stats"
+                    }
+                },
+                "aggregationInterval": "hour",
+                "startDate": "2026-10-15T10:00:00+02:00",
+                "endDate": "2026-10-15T11:59:59+02:00",
+                "fqdn": [
+                    "ALL:example.com"
+                ],
+                "type": "fqdn"
+            }
+        }
+    },
+    "response": {
+        "status": 500,
+        "contentType": "application/json",
+        "body": ""
+    },
+    "finding": "an unknown data source: HTTP 500, empty body"
+}

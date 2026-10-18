@@ -1,0 +1,16 @@
+{
+    "case": "36",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "DELETE",
+        "path": "/domain/1140/redirects/map.example.org/90003",
+        "body": null
+    },
+    "response": {
+        "status": 204,
+        "contentType": null,
+        "body": ""
+    },
+    "finding": "v2 delete: HTTP 204, empty body, no Content-Type"
+}

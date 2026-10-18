@@ -1,0 +1,77 @@
+{
+    "case": "116",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/errorpages-grouped",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": {
+                "example.com": [
+                    {
+                        "objectType": "ErrorPageVO",
+                        "subDomainName": "example.com",
+                        "errorCode": 502,
+                        "content": "",
+                        "permissions": {
+                            "edit": true
+                        },
+                        "id": 90400,
+                        "modified": "2026-06-08T16:59:38+0200",
+                        "created": "2026-06-08T16:59:38+0200"
+                    },
+                    {
+                        "objectType": "ErrorPageVO",
+                        "subDomainName": "example.com",
+                        "errorCode": 504,
+                        "content": "",
+                        "permissions": {
+                            "edit": true
+                        },
+                        "id": 90401,
+                        "modified": "2026-06-08T17:00:06+0200",
+                        "created": "2026-06-08T17:00:06+0200"
+                    }
+                ],
+                "www.example.com": [
+                    {
+                        "objectType": "ErrorPageVO",
+                        "subDomainName": "www.example.com",
+                        "errorCode": 502,
+                        "content": "",
+                        "permissions": {
+                            "edit": true
+                        },
+                        "id": 90402,
+                        "modified": "2026-06-08T16:59:55+0200",
+                        "created": "2026-06-08T16:59:55+0200"
+                    },
+                    {
+                        "objectType": "ErrorPageVO",
+                        "subDomainName": "www.example.com",
+                        "errorCode": 504,
+                        "content": "",
+                        "permissions": {
+                            "edit": true
+                        },
+                        "id": 90403,
+                        "modified": "2026-06-08T16:59:55+0200",
+                        "created": "2026-06-08T16:59:55+0200"
+                    }
+                ]
+            },
+            "page": 1,
+            "count": 2,
+            "pageSize": 50
+        }
+    },
+    "finding": "errorpages-grouped: data keyed by subdomain"
+}

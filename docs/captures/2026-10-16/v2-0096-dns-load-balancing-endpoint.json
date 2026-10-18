@@ -1,0 +1,39 @@
+{
+    "case": "96",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1140/dns-records/90011/load-balancing",
+        "body": {
+            "id": 90011,
+            "modified": "2026-10-16T16:37:08+0200",
+            "weight": 3,
+            "maxFails": 100,
+            "failTimeout": "1",
+            "backup": false,
+            "down": false
+        }
+    },
+    "response": {
+        "status": 500,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "An internal error occurred. Reference: 1d81defb8515f425",
+                    "code": "redacted-5",
+                    "translations": {
+                        "en": "An internal error occurred. Reference: 1d81defb8515f425",
+                        "de": "Es ist ein interner Fehler aufgetreten. Referenz: 1d81defb8515f425"
+                    }
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "PUT …/{id}/load-balancing: HTTP 500 'An internal error occurred' for the inactive probe record (also with the upstream object's own id) — unverified"
+}

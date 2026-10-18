@@ -1,0 +1,18 @@
+{
+    "case": "12 (alsoSeen)",
+    "apiVersion": "v2",
+    "auth": "none",
+    "request": {
+        "method": "GET",
+        "path": "/domain/999999999/dns-records",
+        "body": null
+    },
+    "response": {
+        "status": 401,
+        "contentType": "application/json",
+        "body": {
+            "error": "Session has been revoked"
+        }
+    },
+    "finding": "no Authorization header at all: 401 with error as a string"
+}

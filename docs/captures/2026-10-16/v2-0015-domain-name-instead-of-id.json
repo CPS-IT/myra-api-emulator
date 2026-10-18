@@ -1,0 +1,30 @@
+{
+    "case": "15",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/example.com/cache-clear",
+        "body": {
+            "fqdn": "example.com",
+            "resource": "/__probe__/nothing.txt",
+            "recursive": false
+        }
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The entity does not exist."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "domain NAME instead of id: rejected, v2 needs the id"
+}

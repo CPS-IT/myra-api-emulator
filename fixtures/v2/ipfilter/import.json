@@ -1,0 +1,22 @@
+{
+    "case": "52",
+    "apiVersion": "v2",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/ip-filters/map.example.org/import?type=BLACKLIST",
+        "contentType": "text/csv",
+        "body": "192.0.2.3/32,,__probe__\n"
+    },
+    "response": {
+        "status": 201,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "import signed with HMAC over Content-Type text/csv: works"
+}

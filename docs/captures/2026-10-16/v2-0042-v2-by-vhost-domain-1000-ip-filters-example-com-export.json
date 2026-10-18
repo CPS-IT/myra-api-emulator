@@ -1,0 +1,16 @@
+{
+    "case": "42",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/ip-filters/example.com/export",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "text/csv; charset=UTF-8",
+        "body": "IP,Expires on,Comments\n192.0.2.123/32,,redacted-628\n2001:db8::111/128,,\n192.0.2.124/29,,redacted-629\n192.0.2.125/32,,redacted-630\n192.0.2.126/32,,redacted-631\n192.0.2.127/32,,redacted-628\n192.0.2.128/32,,redacted-632\n"
+    },
+    "finding": "export: text/csv with the columns IP, Expires on, Comments"
+}

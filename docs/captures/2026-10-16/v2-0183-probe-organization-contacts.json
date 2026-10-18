@@ -1,0 +1,58 @@
+{
+    "case": "183",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/organization/contacts",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "OrganizationContactVO",
+                    "name": "redacted-66",
+                    "email": "user7@example.com",
+                    "preferredCommunicationLanguage": "DE",
+                    "types": [
+                        "TECHNICAL"
+                    ],
+                    "receiveSSLReminders": true,
+                    "receiveTrafficAlerts": false,
+                    "technicalPriority": 1,
+                    "id": 90165,
+                    "modified": "2026-01-23T13:37:55+0100",
+                    "created": "2026-01-23T13:37:55+0100"
+                },
+                {
+                    "objectType": "OrganizationContactVO",
+                    "name": "redacted-67",
+                    "email": "user2@example.com",
+                    "phone": "redacted-68",
+                    "preferredCommunicationLanguage": "DE",
+                    "types": [
+                        "TECHNICAL",
+                        "ESCALATION"
+                    ],
+                    "receiveSSLReminders": true,
+                    "receiveTrafficAlerts": false,
+                    "technicalPriority": 1,
+                    "escalationPriority": 1,
+                    "id": 90166,
+                    "modified": "2026-01-23T13:37:55+0100",
+                    "created": "2026-01-23T13:37:55+0100"
+                }
+            ],
+            "page": 1,
+            "count": 2,
+            "pageSize": 50
+        }
+    },
+    "finding": "organisation contacts: OrganizationContactVO (types, priorities, reminders); names and phone redacted"
+}

@@ -1,0 +1,55 @@
+{
+    "case": "172",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/users/90003",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "UserVO",
+                    "email": "user1@example.com",
+                    "login": "user1@example.com",
+                    "firstname": "redacted-1",
+                    "lastname": "redacted-1",
+                    "preferredCommunicationLanguage": "DE",
+                    "organizationId": 1133,
+                    "organizationName": "redacted-2",
+                    "active": true,
+                    "locked": false,
+                    "smimeEnabled": false,
+                    "deleted": false,
+                    "agent": "",
+                    "tfaEnabled": true,
+                    "tfaRequired": true,
+                    "smimeState": "redacted-3",
+                    "roles": [],
+                    "rootGroupRoles": [],
+                    "sessions": [
+                        {
+                            "objectType": "UserSessionVO",
+                            "userAgent": "redacted-5",
+                            "userIP": "192.0.2.101",
+                            "id": 90002,
+                            "created": "2026-10-16T10:57:21+0200"
+                        }
+                    ],
+                    "isIndirectCustomer": false,
+                    "id": 90003,
+                    "modified": "2026-10-16T18:06:09+0200",
+                    "created": "2018-07-03T11:01:21+0200"
+                }
+            ]
+        }
+    },
+    "finding": "a user by id: one-element data"
+}

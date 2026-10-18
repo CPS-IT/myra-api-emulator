@@ -1,0 +1,37 @@
+{
+    "case": "140",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/top-urls/1792051200/1792058399",
+        "body": {
+            "domains": [
+                "example.com"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": [
+            {
+                "url": "/path-1",
+                "count": 1236,
+                "cost": 1237
+            },
+            {
+                "url": "/path-2",
+                "count": 1238,
+                "cost": 1239
+            },
+            {
+                "url": "/path-3",
+                "count": 1240,
+                "cost": 1241
+            }
+        ]
+    },
+    "finding": "bare list [{url, count, cost}], 10 entries"
+}

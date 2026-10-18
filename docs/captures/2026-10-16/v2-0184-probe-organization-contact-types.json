@@ -1,0 +1,45 @@
+{
+    "case": "184",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/organization/contact-types",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "id": 90167,
+                    "key": "TECHNICAL",
+                    "label": "redacted-69"
+                },
+                {
+                    "id": 90168,
+                    "key": "SALES",
+                    "label": "Sales"
+                },
+                {
+                    "id": 90169,
+                    "key": "COMPLIANCE",
+                    "label": "redacted-70"
+                },
+                {
+                    "id": 90170,
+                    "key": "ESCALATION",
+                    "label": "redacted-71"
+                }
+            ],
+            "page": 1,
+            "count": 4,
+            "pageSize": 50
+        }
+    },
+    "finding": "contact types: key + label (no objectType)"
+}

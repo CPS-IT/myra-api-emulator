@@ -1,0 +1,16 @@
+{
+    "case": "129",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/networks/2",
+        "body": null
+    },
+    "response": {
+        "status": 403,
+        "contentType": "text/html; charset=UTF-8",
+        "body": ""
+    },
+    "finding": "no /networks/{page} route: HTTP 403, empty body"
+}

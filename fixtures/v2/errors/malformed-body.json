@@ -1,0 +1,26 @@
+{
+    "case": "13.1",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "body": "\"fqdn\":\"no-such-host.invalid\"  (not valid JSON on purpose)"
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "Invalid data format."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "malformed body (same answer even without a domain id)"
+}

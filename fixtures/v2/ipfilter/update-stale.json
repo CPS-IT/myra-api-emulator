@@ -1,0 +1,34 @@
+{
+    "case": "49",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1140/ip-filters/map.example.org/90002",
+        "body": {
+            "subDomainName": "map.example.org",
+            "type": "BLACKLIST",
+            "value": "192.0.2.1/32",
+            "enabled": false,
+            "comment": "__probe__ stale",
+            "id": 90002,
+            "modified": "2026-10-16T16:11:51+0200"
+        }
+    },
+    "response": {
+        "status": 400,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The record has been edited in the meantime."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "stale modified: HTTP 400"
+}

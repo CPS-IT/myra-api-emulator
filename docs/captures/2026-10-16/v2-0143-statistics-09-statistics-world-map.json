@@ -1,0 +1,145 @@
+{
+    "case": "143",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/world-map/1792051200/1792058399/total_requests/desc",
+        "body": {
+            "domains": [
+                "example.com"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": [
+            {
+                "country_code": "DE",
+                "total_requests": 1245,
+                "total_cached_requests": 1246,
+                "total_uncached_requests": 1247,
+                "total_blocked_requests": 1248,
+                "total_redirect_requests": 1249,
+                "total_verified_requests": 1250,
+                "total_traffic": 1251,
+                "total_cached_traffic": 1252,
+                "total_uncached_traffic": 1253,
+                "astype": [
+                    {
+                        "astype": "redacted-1",
+                        "total_requests": 1254,
+                        "total_cached_requests": 1255,
+                        "total_uncached_requests": 1256,
+                        "total_traffic": 1257,
+                        "total_cached_traffic": 1258,
+                        "total_uncached_traffic": 1259
+                    },
+                    {
+                        "astype": "redacted-2",
+                        "total_requests": 1260,
+                        "total_cached_requests": 1261,
+                        "total_uncached_requests": 1262,
+                        "total_traffic": 1263,
+                        "total_cached_traffic": 1264,
+                        "total_uncached_traffic": 1265
+                    },
+                    {
+                        "astype": "redacted-3",
+                        "total_requests": 1266,
+                        "total_cached_requests": 1267,
+                        "total_uncached_requests": 1268,
+                        "total_traffic": 1269,
+                        "total_cached_traffic": 1270,
+                        "total_uncached_traffic": 1271
+                    }
+                ]
+            },
+            {
+                "country_code": "US",
+                "total_requests": 1272,
+                "total_cached_requests": 1273,
+                "total_uncached_requests": 1274,
+                "total_blocked_requests": 1275,
+                "total_redirect_requests": 1276,
+                "total_verified_requests": 0,
+                "total_traffic": 1277,
+                "total_cached_traffic": 1278,
+                "total_uncached_traffic": 1279,
+                "astype": [
+                    {
+                        "astype": "redacted-2",
+                        "total_requests": 1280,
+                        "total_cached_requests": 1281,
+                        "total_uncached_requests": 1282,
+                        "total_traffic": 1283,
+                        "total_cached_traffic": 1284,
+                        "total_uncached_traffic": 1285
+                    },
+                    {
+                        "astype": "redacted-3",
+                        "total_requests": 1286,
+                        "total_cached_requests": 1287,
+                        "total_uncached_requests": 1288,
+                        "total_traffic": 1289,
+                        "total_cached_traffic": 1290,
+                        "total_uncached_traffic": 1291
+                    },
+                    {
+                        "astype": "redacted-4",
+                        "total_requests": 1292,
+                        "total_cached_requests": 1293,
+                        "total_uncached_requests": 1294,
+                        "total_traffic": 1295,
+                        "total_cached_traffic": 1296,
+                        "total_uncached_traffic": 1297
+                    }
+                ]
+            },
+            {
+                "country_code": "GB",
+                "total_requests": 1298,
+                "total_cached_requests": 1299,
+                "total_uncached_requests": 1300,
+                "total_blocked_requests": 0,
+                "total_redirect_requests": 1301,
+                "total_verified_requests": 0,
+                "total_traffic": 1302,
+                "total_cached_traffic": 1303,
+                "total_uncached_traffic": 1304,
+                "astype": [
+                    {
+                        "astype": "redacted-2",
+                        "total_requests": 1305,
+                        "total_cached_requests": 1306,
+                        "total_uncached_requests": 1307,
+                        "total_traffic": 1308,
+                        "total_cached_traffic": 1309,
+                        "total_uncached_traffic": 1310
+                    },
+                    {
+                        "astype": "redacted-6",
+                        "total_requests": 1311,
+                        "total_cached_requests": 1312,
+                        "total_uncached_requests": 1313,
+                        "total_traffic": 1314,
+                        "total_cached_traffic": 1315,
+                        "total_uncached_traffic": 1316
+                    },
+                    {
+                        "astype": "redacted-3",
+                        "total_requests": 1317,
+                        "total_cached_requests": 1318,
+                        "total_uncached_requests": 1319,
+                        "total_traffic": 1320,
+                        "total_cached_traffic": 1321,
+                        "total_uncached_traffic": 1322
+                    }
+                ]
+            }
+        ]
+    },
+    "finding": "bare list per country: totals + astype list (ASN names redacted)"
+}

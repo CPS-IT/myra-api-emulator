@@ -1,0 +1,25 @@
+{
+    "case": "185",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/organization/notes",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "OrganizationNoteVO"
+                }
+            ]
+        }
+    },
+    "finding": "organisation notes: one OrganizationNoteVO without fields (none set)"
+}

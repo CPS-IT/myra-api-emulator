@@ -1,0 +1,36 @@
+{
+    "case": "178",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/user/tokens",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "TokenVO",
+                    "name": "redacted-65",
+                    "lastUsedDate": "2026-10-16T18:06:15+0200",
+                    "expiryDate": "2026-10-31T23:59:00+0100",
+                    "id": 90164,
+                    "modified": "2026-10-16T18:06:15+0200",
+                    "created": "2026-10-16T11:04:50+0200",
+                    "deleted": false,
+                    "enabled": true
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "API tokens: TokenVO without the token value (name, enabled, expiryDate, lastUsedDate)"
+}

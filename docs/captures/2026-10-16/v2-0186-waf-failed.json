@@ -1,0 +1,39 @@
+{
+    "case": "186",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/waf-rules",
+        "body": {
+            "ruleType": "domain",
+            "name": "__probe__",
+            "description": "__probe__ (myra-web-api): disabled, only /__probe__/waf, logs only",
+            "logIdentifier": "__probe__",
+            "subDomainName": "map.example.org",
+            "direction": "in",
+            "sort": 9999,
+            "enabled": false,
+            "processNext": true,
+            "conditions": [
+                {
+                    "name": "url",
+                    "matchingType": "EXACT",
+                    "value": "/__probe__/waf"
+                }
+            ],
+            "actions": [
+                {
+                    "name": "Log",
+                    "type": "log"
+                }
+            ]
+        }
+    },
+    "response": {
+        "status": 403,
+        "contentType": "text/html; charset=UTF-8",
+        "body": ""
+    },
+    "finding": "probe WAF rule (disabled, only /__probe__/waf, log only) on the unused domain: HTTP 403, EMPTY body — although the user holds DomainWafRule CREATE; nothing was created (verified). Likely WAF not available for that domain; not retried"
+}

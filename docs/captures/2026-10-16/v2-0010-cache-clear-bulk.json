@@ -1,0 +1,39 @@
+{
+    "case": "10",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "body": {
+            "fqdn": "example.com",
+            "bulk": [
+                "/__probe__/a.txt",
+                "/__probe__/b.txt"
+            ],
+            "recursive": false
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "CacheClearVO",
+                    "fqdn": "example.com",
+                    "resource": "/__probe__/b.txt",
+                    "recursive": false,
+                    "bulk": [
+                        "/__probe__/a.txt",
+                        "/__probe__/b.txt"
+                    ]
+                }
+            ]
+        }
+    },
+    "finding": "cache clear, bulk"
+}

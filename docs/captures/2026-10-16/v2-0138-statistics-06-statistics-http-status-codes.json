@@ -1,0 +1,34 @@
+{
+    "case": "138",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/http-status-codes/1792051200/1792058399",
+        "body": {
+            "domains": [
+                "example.com"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": [
+            {
+                "status_code": 200,
+                "value": 1233
+            },
+            {
+                "status_code": 301,
+                "value": 1234
+            },
+            {
+                "status_code": 404,
+                "value": 1235
+            }
+        ]
+    },
+    "finding": "a bare JSON list (no envelope): [{status_code, value}], all codes Myra knows (37)"
+}

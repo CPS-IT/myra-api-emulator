@@ -1,0 +1,151 @@
+{
+    "case": "167",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/waf/actions",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2016-08-08T09:58:19+0200",
+                    "created": "2016-08-08T09:58:19+0200",
+                    "name": "Allow",
+                    "type": "allow",
+                    "availablePhases": 1,
+                    "forceCustomValues": 0
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2016-08-08T09:58:19+0200",
+                    "created": "2016-08-08T09:58:19+0200",
+                    "name": "Block",
+                    "type": "block",
+                    "availablePhases": 1,
+                    "forceCustomValues": 0
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2016-08-08T09:58:19+0200",
+                    "created": "2016-08-08T09:58:19+0200",
+                    "name": "Log",
+                    "type": "log",
+                    "availablePhases": 1,
+                    "forceCustomValues": 0
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2016-08-08T09:58:19+0200",
+                    "created": "2016-08-08T09:58:19+0200",
+                    "name": "redacted-54",
+                    "type": "modify_header",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2016-08-08T09:58:19+0200",
+                    "created": "2016-08-08T09:58:19+0200",
+                    "name": "redacted-55",
+                    "type": "add_header",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2016-08-08T09:58:19+0200",
+                    "created": "2016-08-08T09:58:19+0200",
+                    "name": "redacted-56",
+                    "type": "remove_header",
+                    "availablePhases": 3,
+                    "forceCustomValues": 1
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2019-02-28T10:06:58+0100",
+                    "created": "2019-02-28T10:06:58+0100",
+                    "name": "CAPTCHA",
+                    "type": "verify_human",
+                    "availablePhases": 1,
+                    "forceCustomValues": 0
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2019-02-28T10:06:58+0100",
+                    "created": "2019-02-28T10:06:58+0100",
+                    "name": "redacted-57",
+                    "type": "change_upstream",
+                    "availablePhases": 3,
+                    "forceCustomValues": 1
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2019-02-28T10:06:58+0100",
+                    "created": "2019-02-28T10:06:58+0100",
+                    "name": "redacted-58",
+                    "type": "origin_rate_limit",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2019-07-18T13:10:37+0200",
+                    "created": "2019-07-18T13:10:37+0200",
+                    "name": "Score",
+                    "type": "score",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2019-09-26T14:13:19+0200",
+                    "created": "2019-09-26T14:13:19+0200",
+                    "name": "redacted-59",
+                    "type": "uri_subst",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2019-12-05T09:36:46+0100",
+                    "created": "2019-12-05T09:36:46+0100",
+                    "name": "redacted-60",
+                    "type": "set_http_status",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2023-12-04T13:08:00+0100",
+                    "created": "2023-12-04T13:08:00+0100",
+                    "name": "redacted-61",
+                    "type": "remove_header_value_regex",
+                    "availablePhases": 3,
+                    "forceCustomValues": 2
+                },
+                {
+                    "objectType": "WafActionVO",
+                    "modified": "2024-01-23T13:53:33+0100",
+                    "created": "2024-01-23T13:53:33+0100",
+                    "name": "redacted-62",
+                    "type": "del_qs_param",
+                    "availablePhases": 1,
+                    "forceCustomValues": 1
+                }
+            ],
+            "page": 1,
+            "count": 14,
+            "pageSize": 50
+        }
+    },
+    "finding": "WAF action catalogue: WafActionVO name, type, availablePhases; forceCustomValues is an int here (bool in conditions)"
+}

@@ -1,0 +1,38 @@
+{
+    "case": "123",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/errorpages",
+        "body": {
+            "pageContent": "redacted-1",
+            "selection": {
+                "map.example.org": {
+                    "413": true
+                }
+            }
+        }
+    },
+    "response": {
+        "status": 201,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "ErrorPageVO",
+                    "subDomainName": "map.example.org",
+                    "errorCode": 413,
+                    "content": "",
+                    "id": 90003,
+                    "modified": "2026-10-16T17:03:16+0200",
+                    "created": "2026-10-16T17:03:16+0200"
+                }
+            ]
+        }
+    },
+    "finding": "v2 set: HTTP 201"
+}

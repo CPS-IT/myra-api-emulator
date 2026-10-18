@@ -1,0 +1,35 @@
+{
+    "case": "100",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/maintenance/map.example.org",
+        "body": {
+            "fqdn": "map.example.org",
+            "start": "2099-01-01T01:00:00+0100",
+            "end": "2099-01-01T02:00:00+0100",
+            "content": "redacted-3",
+            "defaultPage": [],
+            "vhostId": 90001,
+            "id": 90002,
+            "modified": "2026-10-16T16:44:00+0200"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The record has been edited in the meantime."
+                }
+            ],
+            "warningList": [],
+            "targetObject": []
+        }
+    },
+    "finding": "stale modified: HTTP 200 + error: true"
+}

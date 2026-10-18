@@ -1,0 +1,42 @@
+{
+    "case": "65",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/cache-settings",
+        "body": {
+            "path": "/__probe__/",
+            "ttl": -1,
+            "type": "exact",
+            "enforce": false,
+            "sort": 999,
+            "enabled": false
+        }
+    },
+    "response": {
+        "status": 201,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "CacheSettingVO",
+                    "path": "/__probe__/",
+                    "ttl": -1,
+                    "notFoundTtl": 60,
+                    "type": "exact",
+                    "enforce": false,
+                    "sort": 999,
+                    "id": 90002,
+                    "modified": "2026-10-16T16:18:42+0200",
+                    "created": "2026-10-16T16:18:42+0200",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "finding": "v2 create: HTTP 201"
+}

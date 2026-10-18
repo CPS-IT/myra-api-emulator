@@ -1,0 +1,31 @@
+{
+    "case": "146",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/histogram/1792051200/1792058399/redacted-137/hourly/0/1",
+        "body": {
+            "domains": [
+                "example.com"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The entity does not exist."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "an unknown chart: HTTP 403 \"The entity does not exist.\""
+}

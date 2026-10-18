@@ -1,0 +1,33 @@
+{
+    "case": "12",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/999999999/dns-records",
+        "body": null
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The entity does not exist."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "unknown domain id (without any token once: 401 {\"error\":\"Session has been revoked\"})",
+    "alsoSeen": {
+        "condition": "no Authorization header at all",
+        "status": 401,
+        "body": {
+            "error": "Session has been revoked"
+        }
+    }
+}

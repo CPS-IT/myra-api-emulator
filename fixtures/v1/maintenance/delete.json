@@ -1,0 +1,28 @@
+{
+    "case": "102",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "DELETE",
+        "path": "/en/rapi/maintenance/map.example.org",
+        "body": {
+            "id": 90002,
+            "fqdn": "map.example.org"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "body": {
+            "error": false,
+            "targetObject": [
+                {
+                    "id": 90002,
+                    "fqdn": "map.example.org"
+                }
+            ],
+            "violationList": []
+        }
+    },
+    "finding": "v1 delete: body {id, fqdn} as the manual says"
+}

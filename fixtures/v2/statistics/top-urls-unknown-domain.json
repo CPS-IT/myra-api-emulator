@@ -1,0 +1,36 @@
+{
+    "case": "145",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/top-urls/1792051200/1792058399",
+        "body": {
+            "domains": [
+                "host1.invalid"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 400,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "An internal error occurred. Reference: 3d13415e82abc89c",
+                    "code": "INTERNAL_ERROR",
+                    "translations": {
+                        "en": "An internal error occurred. Reference: 3d13415e82abc89c",
+                        "de": "Es ist ein interner Fehler aufgetreten. Referenz: 3d13415e82abc89c"
+                    }
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "a domain not in the account: HTTP 400, INTERNAL_ERROR envelope"
+}

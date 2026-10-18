@@ -1,0 +1,38 @@
+{
+    "case": "19",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/redirects/example.com/1",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50,
+            "list": [
+                {
+                    "objectType": "DnsRedirectVO",
+                    "source": "/path-5",
+                    "destination": "https://example.com/path-6",
+                    "type": "redirect",
+                    "subDomainName": "example.com",
+                    "matchingType": "exact",
+                    "sort": 1,
+                    "id": 90392,
+                    "modified": "2018-11-01T14:41:24+0100",
+                    "created": "2018-11-01T14:38:08+0100",
+                    "enabled": true
+                }
+            ]
+        }
+    },
+    "finding": "redirects of the zone apex: per vhost (subDomainName = the apex only)"
+}

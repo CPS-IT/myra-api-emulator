@@ -1,0 +1,156 @@
+{
+    "case": "151",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/subdomains",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "label": "example.com",
+                    "value": "example.com.",
+                    "name": "example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1007,
+                    "monitored": true,
+                    "modified": "2022-08-31T14:00:57+0200",
+                    "monitoredId": 90256,
+                    "certId": 90257,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                },
+                {
+                    "label": "api.example.com",
+                    "value": "api.example.com.",
+                    "name": "api.example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1028,
+                    "monitored": true,
+                    "modified": "2022-08-31T14:00:57+0200",
+                    "monitoredId": 90258,
+                    "certId": 90259,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                },
+                {
+                    "label": "www.example.com",
+                    "value": "www.example.com.",
+                    "name": "www.example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1049,
+                    "monitored": false,
+                    "modified": "2024-06-26T15:34:09+0200",
+                    "monitoredId": 90260,
+                    "certId": 90257,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                },
+                {
+                    "label": "staging.example.com",
+                    "value": "staging.example.com.",
+                    "name": "staging.example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1070,
+                    "monitored": false,
+                    "modified": "2025-01-20T14:02:58+0100",
+                    "monitoredId": 90261,
+                    "certId": 90262,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                },
+                {
+                    "label": "api.staging.example.com",
+                    "value": "api.staging.example.com.",
+                    "name": "api.staging.example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1091,
+                    "monitored": true,
+                    "modified": "2022-10-04T13:40:48+0200",
+                    "monitoredId": 90263,
+                    "certId": 90264,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                },
+                {
+                    "label": "map.example.com",
+                    "value": "map.example.com.",
+                    "name": "map.example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1112,
+                    "monitored": false,
+                    "modified": "2025-10-23T09:26:27+0200",
+                    "monitoredId": 90265,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                }
+            ],
+            "page": 1,
+            "count": 6,
+            "pageSize": 50
+        }
+    },
+    "finding": "the vhosts of one domain"
+}

@@ -1,0 +1,35 @@
+{
+    "case": "23",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/redirects/example.com/90392",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRedirectVO",
+                    "source": "/path-5",
+                    "destination": "https://example.com/path-6",
+                    "type": "redirect",
+                    "subDomainName": "example.com",
+                    "matchingType": "exact",
+                    "sort": 1,
+                    "id": 90392,
+                    "modified": "2018-11-01T14:41:24+0100",
+                    "created": "2018-11-01T14:38:08+0100",
+                    "enabled": true
+                }
+            ]
+        }
+    },
+    "finding": "get by id: data is a one-element list, no paging fields"
+}

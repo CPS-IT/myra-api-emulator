@@ -1,0 +1,33 @@
+{
+    "case": "110",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/maintenance-templates",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "MaintenanceTemplateVO",
+                    "id": 90004,
+                    "modified": "2026-10-16T16:44:09+0200",
+                    "created": "2026-10-16T16:44:08+0200",
+                    "name": "__probe__",
+                    "content": "redacted-2"
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "template list"
+}

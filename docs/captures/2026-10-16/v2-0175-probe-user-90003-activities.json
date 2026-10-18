@@ -1,0 +1,1473 @@
+{
+    "case": "175",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/user/90003/activities",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-22",
+                    "message": "Failed login attempt",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-25",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90012,
+                    "modified": "2024-05-24T14:40:11+0200",
+                    "created": "2024-05-24T14:40:11+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-25",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90013,
+                    "modified": "2024-05-24T14:40:32+0200",
+                    "created": "2024-05-24T14:40:32+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-25",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90014,
+                    "modified": "2024-05-27T11:14:19+0200",
+                    "created": "2024-05-27T11:14:19+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-31",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.104",
+                    "count": 1,
+                    "id": 90015,
+                    "modified": "2024-05-27T11:44:02+0200",
+                    "created": "2024-05-27T11:44:02+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-31",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.104",
+                    "count": 1,
+                    "id": 90016,
+                    "modified": "2024-05-28T08:44:42+0200",
+                    "created": "2024-05-28T08:44:42+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-34",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.104",
+                    "count": 1,
+                    "id": 90017,
+                    "modified": "2024-05-29T10:53:06+0200",
+                    "created": "2024-05-29T10:53:06+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-34",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.105",
+                    "count": 1,
+                    "id": 90018,
+                    "modified": "2024-06-13T11:43:50+0200",
+                    "created": "2024-06-13T11:43:50+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-35",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.106",
+                    "count": 1,
+                    "id": 90019,
+                    "modified": "2024-06-13T14:04:12+0200",
+                    "created": "2024-06-13T14:04:12+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-38",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.107",
+                    "count": 2,
+                    "id": 90020,
+                    "modified": "2024-06-13T14:29:19+0200",
+                    "created": "2024-06-13T14:28:32+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-39",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.108"
+                        }
+                    },
+                    "ip": "192.0.2.109",
+                    "count": 1,
+                    "id": 90021,
+                    "modified": "2024-06-17T14:15:44+0200",
+                    "created": "2024-06-17T14:15:44+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-39",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.108"
+                        }
+                    },
+                    "ip": "192.0.2.109",
+                    "count": 1,
+                    "id": 90022,
+                    "modified": "2024-06-17T14:23:54+0200",
+                    "created": "2024-06-17T14:23:54+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-40",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.110",
+                    "count": 1,
+                    "id": 90023,
+                    "modified": "2024-06-24T11:45:55+0200",
+                    "created": "2024-06-24T11:45:55+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-40",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.110",
+                    "count": 1,
+                    "id": 90024,
+                    "modified": "2024-06-25T15:15:43+0200",
+                    "created": "2024-06-25T15:15:43+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-41",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.111",
+                    "count": 1,
+                    "id": 90025,
+                    "modified": "2024-06-28T14:02:51+0200",
+                    "created": "2024-06-28T14:02:51+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-22",
+                    "message": "Failed login attempt",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-42",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90026,
+                    "modified": "2024-07-02T10:49:46+0200",
+                    "created": "2024-07-02T10:49:46+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-42",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90027,
+                    "modified": "2024-07-02T10:50:29+0200",
+                    "created": "2024-07-02T10:50:29+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-22",
+                    "message": "Failed login attempt",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-44",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::101",
+                    "count": 1,
+                    "id": 90028,
+                    "modified": "2024-07-18T18:09:40+0200",
+                    "created": "2024-07-18T18:09:40+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-44",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::101",
+                    "count": 1,
+                    "id": 90029,
+                    "modified": "2024-07-18T18:09:54+0200",
+                    "created": "2024-07-18T18:09:54+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-25",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90030,
+                    "modified": "2024-07-22T12:18:53+0200",
+                    "created": "2024-07-22T12:18:53+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-46",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.110",
+                    "count": 1,
+                    "id": 90031,
+                    "modified": "2024-07-23T13:40:19+0200",
+                    "created": "2024-07-23T13:40:19+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::102",
+                    "count": 1,
+                    "id": 90032,
+                    "modified": "2024-08-08T12:01:12+0200",
+                    "created": "2024-08-08T12:01:12+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::102",
+                    "count": 1,
+                    "id": 90033,
+                    "modified": "2024-08-08T12:38:45+0200",
+                    "created": "2024-08-08T12:38:45+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::102",
+                    "count": 1,
+                    "id": 90034,
+                    "modified": "2024-08-08T14:01:56+0200",
+                    "created": "2024-08-08T14:01:56+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::102",
+                    "count": 1,
+                    "id": 90035,
+                    "modified": "2024-08-08T15:54:08+0200",
+                    "created": "2024-08-08T15:54:08+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "2001:db8::103",
+                    "count": 1,
+                    "id": 90036,
+                    "modified": "2024-08-09T09:02:20+0200",
+                    "created": "2024-08-09T09:02:20+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::104",
+                    "count": 1,
+                    "id": 90037,
+                    "modified": "2024-08-11T11:11:48+0200",
+                    "created": "2024-08-11T11:11:48+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::105",
+                    "count": 1,
+                    "id": 90038,
+                    "modified": "2024-08-12T09:05:14+0200",
+                    "created": "2024-08-12T09:05:14+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::106",
+                    "count": 1,
+                    "id": 90039,
+                    "modified": "2024-08-13T09:03:20+0200",
+                    "created": "2024-08-13T09:03:20+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::106",
+                    "count": 1,
+                    "id": 90040,
+                    "modified": "2024-08-13T09:15:03+0200",
+                    "created": "2024-08-13T09:15:03+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-34",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.112",
+                    "count": 1,
+                    "id": 90041,
+                    "modified": "2024-08-13T10:22:07+0200",
+                    "created": "2024-08-13T10:22:07+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::107",
+                    "count": 1,
+                    "id": 90042,
+                    "modified": "2024-08-13T12:51:45+0200",
+                    "created": "2024-08-13T12:51:45+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-47",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::108",
+                    "count": 1,
+                    "id": 90043,
+                    "modified": "2024-08-14T09:55:34+0200",
+                    "created": "2024-08-14T09:55:34+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-34",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.112",
+                    "count": 1,
+                    "id": 90044,
+                    "modified": "2024-08-14T09:59:28+0200",
+                    "created": "2024-08-14T09:59:28+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-49",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.113",
+                    "count": 1,
+                    "id": 90045,
+                    "modified": "2024-08-16T14:48:48+0200",
+                    "created": "2024-08-16T14:48:48+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-46",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.110",
+                    "count": 1,
+                    "id": 90046,
+                    "modified": "2024-08-26T11:40:54+0200",
+                    "created": "2024-08-26T11:40:54+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-22",
+                    "message": "Failed login attempt",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-50",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90047,
+                    "modified": "2024-08-26T14:18:43+0200",
+                    "created": "2024-08-26T14:18:43+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-50",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90048,
+                    "modified": "2024-08-26T14:19:10+0200",
+                    "created": "2024-08-26T14:19:10+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-51",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::109",
+                    "count": 1,
+                    "id": 90049,
+                    "modified": "2024-08-27T11:30:20+0200",
+                    "created": "2024-08-27T11:30:20+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-51",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-48"
+                        }
+                    },
+                    "ip": "2001:db8::109",
+                    "count": 1,
+                    "id": 90050,
+                    "modified": "2024-08-27T11:48:43+0200",
+                    "created": "2024-08-27T11:48:43+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-46",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-37"
+                        }
+                    },
+                    "ip": "192.0.2.110",
+                    "count": 1,
+                    "id": 90051,
+                    "modified": "2024-09-02T09:40:55+0200",
+                    "created": "2024-09-02T09:40:55+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-30",
+                            "zipcode": "redacted-34",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-33"
+                        },
+                        "browser": {
+                            "name": "Chrome",
+                            "version": "192.0.2.103"
+                        }
+                    },
+                    "ip": "192.0.2.112",
+                    "count": 1,
+                    "id": 90052,
+                    "modified": "2024-09-03T10:27:22+0200",
+                    "created": "2024-09-03T10:27:22+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-52",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90053,
+                    "modified": "2024-09-30T10:57:46+0200",
+                    "created": "2024-09-30T10:57:46+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-53",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-54"
+                        }
+                    },
+                    "ip": "2001:db8::10a",
+                    "count": 1,
+                    "id": 90054,
+                    "modified": "2024-09-30T12:02:17+0200",
+                    "created": "2024-09-30T12:02:17+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-53",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-54"
+                        }
+                    },
+                    "ip": "2001:db8::10a",
+                    "count": 1,
+                    "id": 90055,
+                    "modified": "2024-09-30T12:35:24+0200",
+                    "created": "2024-09-30T12:35:24+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-53",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-54"
+                        }
+                    },
+                    "ip": "2001:db8::10b",
+                    "count": 1,
+                    "id": 90056,
+                    "modified": "2024-10-02T17:15:45+0200",
+                    "created": "2024-10-02T17:15:45+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-52",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-26",
+                            "version": "unknown"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-28"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90057,
+                    "modified": "2024-10-08T11:10:43+0200",
+                    "created": "2024-10-08T11:10:43+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-52",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "192.0.2.102",
+                    "count": 1,
+                    "id": 90058,
+                    "modified": "2024-10-08T11:19:26+0200",
+                    "created": "2024-10-08T11:19:26+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-24",
+                            "zipcode": "redacted-55",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-45"
+                        }
+                    },
+                    "ip": "192.0.2.114",
+                    "count": 1,
+                    "id": 90059,
+                    "modified": "2024-10-17T10:57:09+0200",
+                    "created": "2024-10-17T10:57:09+0200"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-29",
+                    "message": "Successful login",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-56"
+                        }
+                    },
+                    "ip": "192.0.2.115",
+                    "count": 1,
+                    "id": 90060,
+                    "modified": "2024-11-08T14:49:17+0100",
+                    "created": "2024-11-08T14:49:17+0100"
+                },
+                {
+                    "objectType": "ActivityVO",
+                    "type": "redacted-22",
+                    "message": "Failed login attempt",
+                    "title": "Login",
+                    "details": {
+                        "geo": {
+                            "country": "redacted-23",
+                            "countrycode": "DE",
+                            "city": "redacted-43",
+                            "zipcode": "redacted-57",
+                            "latitude": 0,
+                            "longitude": 0
+                        },
+                        "os": {
+                            "name": "redacted-32",
+                            "version": "redacted-36"
+                        },
+                        "browser": {
+                            "name": "redacted-27",
+                            "version": "redacted-58"
+                        }
+                    },
+                    "ip": "2001:db8::10c",
+                    "count": 1,
+                    "id": 90061,
+                    "modified": "2024-12-05T09:19:05+0100",
+                    "created": "2024-12-05T09:19:05+0100"
+                }
+            ],
+            "page": 1,
+            "count": 176,
+            "pageSize": 50
+        }
+    },
+    "finding": "a user's activities (logins): paged (176 entries, 50 per page); geo coordinates zeroed, browser versions came out as documentation IPs"
+}

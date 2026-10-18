@@ -1,0 +1,37 @@
+{
+    "case": "124",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/errorpages",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "ErrorPageVO",
+                    "subDomainName": "map.example.org",
+                    "errorCode": 413,
+                    "content": "",
+                    "permissions": {
+                        "edit": true
+                    },
+                    "id": 90003,
+                    "modified": "2026-10-16T17:03:16+0200",
+                    "created": "2026-10-16T17:03:16+0200"
+                }
+            ],
+            "page": 0,
+            "count": 1,
+            "pageSize": 10000000000000000
+        }
+    },
+    "finding": "the list with the probe page, unpaged"
+}

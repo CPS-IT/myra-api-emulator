@@ -1,0 +1,12 @@
+# The Composer package is src/, public/, fixtures/ (the emulator needs all three), composer.json,
+# README.md and LICENSE. Only the development and image files stay out of it.
+/.github                 export-ignore
+/docs                    export-ignore
+/tests                   export-ignore
+/.dockerignore           export-ignore
+/.gitattributes          export-ignore
+/.gitignore              export-ignore
+/.php-cs-fixer.dist.php  export-ignore
+/Dockerfile              export-ignore
+/phpstan.neon.dist       export-ignore
+/phpunit.xml.dist        export-ignore

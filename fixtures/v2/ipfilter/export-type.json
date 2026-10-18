@@ -1,0 +1,16 @@
+{
+    "case": "50",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/ip-filters/map.example.org/export?type=BLACKLIST",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "text/csv; charset=UTF-8",
+        "body": "IP,Expires on,Comments\n192.0.2.1/32,,__probe__ updated\n"
+    },
+    "finding": "export filtered by ?type=BLACKLIST"
+}

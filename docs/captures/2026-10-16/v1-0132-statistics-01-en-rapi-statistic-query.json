@@ -1,0 +1,247 @@
+{
+    "case": "132",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/statistic/query",
+        "body": {
+            "query": {
+                "aggregationInterval": "hour",
+                "dataSources": {
+                    "requests": {
+                        "source": "requests",
+                        "type": "stats"
+                    },
+                    "requests_histogram": {
+                        "source": "requests",
+                        "type": "histogram"
+                    },
+                    "response_codes": {
+                        "source": "response_codes",
+                        "type": "stats"
+                    }
+                },
+                "startDate": "2026-10-15T10:00:00+02:00",
+                "endDate": "2026-10-15T11:59:59+02:00",
+                "fqdn": [
+                    "ALL:example.com"
+                ],
+                "type": "fqdn"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "objectType": "StatisticVO",
+            "query": {
+                "objectType": "StatisticQueryVO",
+                "startDate": "2026-10-15T10:00:00+0200",
+                "endDate": "2026-10-15T11:59:59+0200",
+                "fqdn": [
+                    "ALL:example.com"
+                ],
+                "dataSources": {
+                    "requests": {
+                        "source": "requests",
+                        "type": "stats"
+                    },
+                    "requests_histogram": {
+                        "source": "requests",
+                        "type": "histogram"
+                    },
+                    "response_codes": {
+                        "source": "response_codes",
+                        "type": "stats"
+                    }
+                },
+                "aggregationInterval": "hour",
+                "type": "fqdn"
+            },
+            "result": {
+                "response_codes": {
+                    "500": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "502": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "503": {
+                        "min": 1001,
+                        "max": 1002,
+                        "sum": 1003,
+                        "avg": 4.5
+                    },
+                    "504": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "201": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "202": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "204": {
+                        "min": 1005,
+                        "max": 1006,
+                        "sum": 1007,
+                        "avg": 8.5
+                    },
+                    "206": {
+                        "min": 1009,
+                        "max": 1010,
+                        "sum": 1011,
+                        "avg": 12.5
+                    },
+                    "302": {
+                        "min": 1013,
+                        "max": 1014,
+                        "sum": 1015,
+                        "avg": 1016
+                    },
+                    "300": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "422": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "303": {
+                        "min": 1017,
+                        "max": 1018,
+                        "sum": 1019,
+                        "avg": 20.5
+                    },
+                    "308": {
+                        "min": 1021,
+                        "max": 1022,
+                        "sum": 1023,
+                        "avg": 1024
+                    },
+                    "307": {
+                        "min": 1025,
+                        "max": 1026,
+                        "sum": 1027,
+                        "avg": 28.5
+                    },
+                    "301": {
+                        "min": 1029,
+                        "max": 1030,
+                        "sum": 1031,
+                        "avg": 32.5
+                    },
+                    "304": {
+                        "min": 1033,
+                        "max": 1034,
+                        "sum": 1035,
+                        "avg": 36.5
+                    },
+                    "405": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "400": {
+                        "min": 1037,
+                        "max": 1038,
+                        "sum": 1039,
+                        "avg": 1040
+                    },
+                    "406": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "401": {
+                        "min": 1041,
+                        "max": 1042,
+                        "sum": 1043,
+                        "avg": 44.5
+                    },
+                    "408": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "403": {
+                        "min": 1045,
+                        "max": 1046,
+                        "sum": 1047,
+                        "avg": 48.5
+                    },
+                    "200": {
+                        "min": 1049,
+                        "max": 1050,
+                        "sum": 1051,
+                        "avg": 52.5
+                    },
+                    "404": {
+                        "min": 1053,
+                        "max": 1054,
+                        "sum": 1055,
+                        "avg": 56.5
+                    },
+                    "499": {
+                        "min": 1057,
+                        "max": 1058,
+                        "sum": 1059,
+                        "avg": 60.5
+                    },
+                    "429": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "Other": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    }
+                },
+                "requests_histogram": {
+                    "1792051200000": {
+                        "value": 1061
+                    },
+                    "1792054800000": {
+                        "value": 1062
+                    }
+                },
+                "requests": {
+                    "min": 1063,
+                    "max": 1064,
+                    "sum": 1065,
+                    "avg": 66.5
+                }
+            },
+            "targetObject": null
+        }
+    },
+    "finding": "statistic query (2 h; metric numbers, URLs scrubbed): StatisticVO WITHOUT envelope (no error key), targetObject null; histogram buckets {value} keyed by ms (the manual: min/max/avg/sum); response_codes stats = map code → {min,max,sum,avg} incl. key Other; dates echoed as +0200"
+}

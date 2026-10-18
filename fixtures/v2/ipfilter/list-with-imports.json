@@ -1,0 +1,59 @@
+{
+    "case": "54",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/ip-filters/map.example.org",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.1/32",
+                    "type": "BLACKLIST",
+                    "subDomainName": "map.example.org",
+                    "id": 90002,
+                    "modified": "2026-10-16T16:11:52+0200",
+                    "created": "2026-10-16T16:11:51+0200",
+                    "comment": "__probe__ updated",
+                    "enabled": false
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.2/32",
+                    "type": "BLACKLIST",
+                    "expireDate": "2099-12-31T23:59:59+0100",
+                    "subDomainName": "map.example.org",
+                    "id": 90003,
+                    "modified": "2026-10-16T16:11:55+0200",
+                    "created": "2026-10-16T16:11:55+0200",
+                    "comment": "__probe__",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.3/32",
+                    "type": "BLACKLIST",
+                    "subDomainName": "map.example.org",
+                    "id": 90004,
+                    "modified": "2026-10-16T16:11:55+0200",
+                    "created": "2026-10-16T16:11:55+0200",
+                    "comment": "__probe__",
+                    "enabled": true
+                }
+            ],
+            "page": 1,
+            "count": 3,
+            "pageSize": 50
+        }
+    },
+    "finding": "list after the imports: expireDate appears only when set"
+}

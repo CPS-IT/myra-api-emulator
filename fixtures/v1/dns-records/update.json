@@ -1,0 +1,71 @@
+{
+    "case": "86",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "body": {
+            "name": "__probe__.example.org",
+            "value": "redacted-2",
+            "priority": 0,
+            "ttl": 300,
+            "vhostId": 90001,
+            "recordType": "TXT",
+            "active": false,
+            "paused": false,
+            "upstreamOptions": {
+                "objectType": "UpstreamOptionsVO",
+                "backup": false,
+                "down": false
+            },
+            "alternativeCname": "host1.ax4z.com.",
+            "alternativeCnameDnsSec": "host1.ax4z-s.com.",
+            "caaFlags": 0,
+            "endpoints": [],
+            "serviceType": 3,
+            "id": 90002,
+            "modified": "2026-10-16T16:36:57+0200",
+            "enabled": true,
+            "comment": "__probe__"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "targetObject": [
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "__probe__.example.org",
+                    "value": "redacted-2",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 90001,
+                    "recordType": "TXT",
+                    "active": false,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "backup": false,
+                        "down": false
+                    },
+                    "alternativeCname": "host1.ax4z.com.",
+                    "alternativeCnameDnsSec": "host1.ax4z-s.com.",
+                    "caaFlags": 0,
+                    "endpoints": [],
+                    "serviceType": 3,
+                    "id": 90002,
+                    "modified": "2026-10-16T16:36:58+0200",
+                    "created": "2026-10-16T16:36:57+0200",
+                    "enabled": true,
+                    "comment": "__probe__"
+                }
+            ]
+        }
+    },
+    "finding": "v1 update: the complete record as read, changes on top"
+}

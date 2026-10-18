@@ -1,0 +1,227 @@
+{
+    "case": "127",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/networks",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 22,
+            "pageSize": 50,
+            "list": [
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90002,
+                    "modified": "2018-06-25T13:27:06+0200",
+                    "created": "2018-06-25T13:27:06+0200",
+                    "network": "192.0.2.102/24",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90003,
+                    "modified": "2018-06-25T13:27:15+0200",
+                    "created": "2018-06-25T13:27:15+0200",
+                    "network": "192.0.2.103/24",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90013,
+                    "modified": "2018-06-25T13:28:26+0200",
+                    "created": "2018-06-25T13:28:26+0200",
+                    "network": "2001:db8::101/32",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90014,
+                    "modified": "2018-06-25T13:28:31+0200",
+                    "created": "2018-06-25T13:28:31+0200",
+                    "network": "2001:db8::102/32",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90015,
+                    "modified": "2018-06-25T13:28:36+0200",
+                    "created": "2018-06-25T13:28:36+0200",
+                    "network": "2001:db8::103/32",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90016,
+                    "modified": "2018-06-25T13:28:40+0200",
+                    "created": "2018-06-25T13:28:40+0200",
+                    "network": "2001:db8::104/32",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90021,
+                    "modified": "2018-10-15T21:07:31+0200",
+                    "created": "2018-06-25T13:29:13+0200",
+                    "comment": "redacted-3",
+                    "network": "192.0.2.113/32",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90022,
+                    "modified": "2018-10-15T21:06:51+0200",
+                    "created": "2018-06-25T13:29:17+0200",
+                    "comment": "redacted-4",
+                    "network": "192.0.2.114/32",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90024,
+                    "modified": "2018-06-25T13:29:39+0200",
+                    "created": "2018-06-25T13:29:39+0200",
+                    "network": "192.0.2.116/29",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90025,
+                    "modified": "2018-06-25T13:29:44+0200",
+                    "created": "2018-06-25T13:29:44+0200",
+                    "network": "2001:db8::109/128",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90026,
+                    "modified": "2018-10-15T21:07:53+0200",
+                    "created": "2018-06-25T13:29:50+0200",
+                    "comment": "redacted-6",
+                    "network": "2001:db8::10a/128",
+                    "validFrom": "2018-06-25T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90027,
+                    "modified": "2018-07-03T16:37:54+0200",
+                    "created": "2018-07-03T16:37:54+0200",
+                    "network": "2001:db8::10b/48",
+                    "validFrom": "2018-07-03T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90028,
+                    "modified": "2019-05-13T13:12:27+0200",
+                    "created": "2019-05-13T13:12:27+0200",
+                    "comment": "redacted-7",
+                    "network": "2001:db8::10c/32",
+                    "validFrom": "2019-05-13T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90029,
+                    "modified": "2019-06-14T08:47:14+0200",
+                    "created": "2019-06-14T08:47:14+0200",
+                    "network": "192.0.2.117/22",
+                    "validFrom": "2019-06-14T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90030,
+                    "modified": "2019-06-14T08:47:36+0200",
+                    "created": "2019-06-14T08:47:36+0200",
+                    "network": "192.0.2.118/22",
+                    "validFrom": "2019-06-14T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90031,
+                    "modified": "2019-06-28T17:46:22+0200",
+                    "created": "2019-06-28T17:46:22+0200",
+                    "network": "192.0.2.119/22",
+                    "validFrom": "2019-06-28T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90032,
+                    "modified": "2020-09-29T19:18:59+0200",
+                    "created": "2020-09-29T19:18:59+0200",
+                    "network": "192.0.2.120/20",
+                    "validFrom": "2020-09-29T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90033,
+                    "modified": "2022-06-09T12:52:27+0200",
+                    "created": "2022-06-09T12:52:27+0200",
+                    "network": "192.0.2.121/24",
+                    "validFrom": "2022-06-09T02:00:00+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90034,
+                    "modified": "2026-02-18T13:16:41+0100",
+                    "created": "2026-02-18T13:16:41+0100",
+                    "network": "2001:db8::10d/32",
+                    "validFrom": "2026-02-18T01:00:00+0100",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90035,
+                    "modified": "2026-02-18T13:17:20+0100",
+                    "created": "2026-02-18T13:17:20+0100",
+                    "network": "2001:db8::10e/32",
+                    "validFrom": "2026-02-18T01:00:00+0100",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90036,
+                    "modified": "2026-02-18T13:17:30+0100",
+                    "created": "2026-02-18T13:17:30+0100",
+                    "network": "2001:db8::10f/32",
+                    "validFrom": "2026-02-18T01:00:00+0100",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpRangeVO",
+                    "id": 90037,
+                    "modified": "2026-02-18T13:17:40+0100",
+                    "created": "2026-02-18T13:17:40+0100",
+                    "network": "2001:db8::110/32",
+                    "validFrom": "2026-02-18T01:00:00+0100",
+                    "enabled": true
+                }
+            ]
+        }
+    },
+    "finding": "v1 lists only the enabled ranges (22) — exactly the enabled ones of v2"
+}

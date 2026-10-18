@@ -1,0 +1,16 @@
+{
+    "case": "191",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domains/1140/bind-raw/Myra",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "text/plain; charset=UTF-8",
+        "body": "$ttl 38400\nexample.org. IN SOA dns.dns3.de. support.myrasecurity.com. (\n        2792168041\n        16384\n        2048\n        1048576\n        2560 )\nexample.org. IN NS dns.dns3.de\nexample.org. IN NS dns.dns4.de\nexample.org. IN NS dns.dns2.de\nexample.org. IN NS dns.dns1.de\nmap.example.org. 300 IN A 192.0.2.15\nmap.example.org. 300 IN AAAA 2001:db8::d\n"
+    },
+    "finding": "v2 zone file, ipTarget Myra: text/plain"
+}

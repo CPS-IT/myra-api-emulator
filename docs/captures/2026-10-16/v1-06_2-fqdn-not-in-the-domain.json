@@ -1,0 +1,35 @@
+{
+    "case": "6.2",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "body": {
+            "fqdn": "no-such-host.invalid",
+            "resource": "/__probe__/nothing.txt",
+            "recursive": false
+        }
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "fqdn",
+                    "message": "The given domain does not exist.",
+                    "code": "DOMAIN_DOES_NOT_EXIST",
+                    "translations": {
+                        "en": "The given domain does not exist.",
+                        "de": "Die angegebene Domain wurde nicht gefunden."
+                    }
+                }
+            ],
+            "warningList": [],
+            "targetObject": []
+        }
+    },
+    "finding": "fqdn not in the domain: violation with code"
+}

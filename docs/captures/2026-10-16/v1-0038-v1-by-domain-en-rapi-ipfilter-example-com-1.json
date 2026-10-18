@@ -1,0 +1,101 @@
+{
+    "case": "38",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/ipfilter/example.com/1",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 7,
+            "pageSize": 50,
+            "list": [
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.123/32",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90393,
+                    "modified": "2018-07-11T13:57:24+0200",
+                    "created": "2018-07-11T13:57:24+0200",
+                    "comment": "redacted-628",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "2001:db8::111/128",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90394,
+                    "modified": "2019-06-04T10:23:55+0200",
+                    "created": "2019-06-04T10:23:55+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.124/29",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90395,
+                    "modified": "2018-07-04T14:32:09+0200",
+                    "created": "2018-07-03T16:51:16+0200",
+                    "comment": "redacted-629",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.125/32",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90396,
+                    "modified": "2018-07-10T10:20:45+0200",
+                    "created": "2018-07-10T10:20:45+0200",
+                    "comment": "redacted-630",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.126/32",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90397,
+                    "modified": "2018-07-04T14:32:08+0200",
+                    "created": "2018-07-03T16:50:46+0200",
+                    "comment": "redacted-631",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.127/32",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90398,
+                    "modified": "2018-07-11T13:57:40+0200",
+                    "created": "2018-07-11T13:57:40+0200",
+                    "comment": "redacted-628",
+                    "enabled": true
+                },
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.128/32",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90399,
+                    "modified": "2022-04-26T13:20:32+0200",
+                    "created": "2022-04-26T13:20:32+0200",
+                    "comment": "redacted-632",
+                    "enabled": true
+                }
+            ]
+        }
+    },
+    "finding": "IP filter of the apex: IpFilterVO, per vhost like redirects"
+}

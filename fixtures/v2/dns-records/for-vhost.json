@@ -1,0 +1,63 @@
+{
+    "case": "84",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/vhost/1007/dns-records",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "example.com",
+                    "value": "192.0.2.10",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1007,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1014,
+                        "modified": "2020-04-16T09:04:16+0200",
+                        "created": "2020-04-16T09:04:16+0200"
+                    },
+                    "alternativeCname": "example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.11"
+                        ],
+                        "ipv6": [
+                            "2001:db8::a"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1021,
+                    "modified": "2022-08-23T12:08:24+0200",
+                    "created": "2018-07-03T11:05:33+0200",
+                    "enabled": true
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "the records of one vhost, by its v2 vhostId"
+}

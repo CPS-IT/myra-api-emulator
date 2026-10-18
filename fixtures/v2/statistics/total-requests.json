@@ -1,0 +1,197 @@
+{
+    "case": "135",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/statistics/total-domain-requests/1792051200/1792058399",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "graph": {
+                "total_requests": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 1133
+                        },
+                        {
+                            "x": 1792051320000,
+                            "y": 1134
+                        },
+                        {
+                            "x": 1792051440000,
+                            "y": 1135
+                        }
+                    ]
+                },
+                "total_uncached_requests": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 1136
+                        },
+                        {
+                            "x": 1792051320000,
+                            "y": 1137
+                        },
+                        {
+                            "x": 1792051440000,
+                            "y": 1138
+                        }
+                    ]
+                },
+                "total_blocked_requests": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 0
+                        },
+                        {
+                            "x": 1792054440000,
+                            "y": 0
+                        },
+                        {
+                            "x": 1792054560000,
+                            "y": 1139
+                        }
+                    ]
+                },
+                "total_cached_requests": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 1140
+                        },
+                        {
+                            "x": 1792051320000,
+                            "y": 1141
+                        },
+                        {
+                            "x": 1792051440000,
+                            "y": 1142
+                        }
+                    ]
+                },
+                "total_redirect_requests": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 1143
+                        },
+                        {
+                            "x": 1792051320000,
+                            "y": 1144
+                        },
+                        {
+                            "x": 1792051440000,
+                            "y": 1145
+                        }
+                    ]
+                },
+                "total_verified_requests": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 0
+                        },
+                        {
+                            "x": 1792057680000,
+                            "y": 0
+                        },
+                        {
+                            "x": 1792057800000,
+                            "y": 1146
+                        }
+                    ]
+                },
+                "total_ingress_traffic": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 1147
+                        },
+                        {
+                            "x": 1792051320000,
+                            "y": 1148
+                        },
+                        {
+                            "x": 1792051440000,
+                            "y": 1149
+                        }
+                    ]
+                },
+                "total_egress_traffic": {
+                    "name": "",
+                    "max": 0,
+                    "sum": 0,
+                    "data": [
+                        {
+                            "x": 1792051200000,
+                            "y": 1150
+                        },
+                        {
+                            "x": 1792051320000,
+                            "y": 1151
+                        },
+                        {
+                            "x": 1792051440000,
+                            "y": 1152
+                        }
+                    ]
+                }
+            },
+            "data": {
+                "total_requests": 1153,
+                "total_https_requests": 1154,
+                "total_non_https_requests": 1155,
+                "total_blocked_requests": 1156,
+                "total_cached_requests": 1157,
+                "total_uncached_requests": 1158,
+                "total_redirect_requests": 1159,
+                "total_verified_requests": 1160,
+                "total_traffic": 1161,
+                "total_ingress_traffic": 1162,
+                "total_egress_traffic": 1163,
+                "total_cached_traffic": 1164,
+                "total_uncached_traffic": 1165,
+                "total_other_traffic": 1166,
+                "mean_requests_ps": 167.5,
+                "mean_blocked_requests_ps": 168.5,
+                "mean_cached_requests_ps": 169.5,
+                "mean_uncached_requests_ps": 170.5,
+                "mean_redirect_requests_ps": 171.5,
+                "mean_verified_requests_ps": 172.5,
+                "mean_traffic_ps": 173.5,
+                "mean_cached_traffic_ps": 174.5,
+                "mean_uncached_traffic_ps": 175.5,
+                "upstream_time_avg": 176.5
+            }
+        }
+    },
+    "finding": "all domains (GET, unix seconds in the path): {graph: name → {name, max, sum, data: [{x ms, y}]}, data: totals}; graph max/sum 0"
+}

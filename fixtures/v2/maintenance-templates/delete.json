@@ -1,0 +1,16 @@
+{
+    "case": "111",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "DELETE",
+        "path": "/domain/1140/maintenance-templates/90004",
+        "body": null
+    },
+    "response": {
+        "status": 204,
+        "contentType": null,
+        "body": ""
+    },
+    "finding": "template delete: HTTP 204"
+}

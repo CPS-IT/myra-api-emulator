@@ -1,0 +1,63 @@
+{
+    "case": "88",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "PUT",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "body": {
+            "name": "myra-web-api-probe.example.org",
+            "recordType": "A",
+            "value": "192.0.2.1",
+            "ttl": 300,
+            "active": false,
+            "enabled": true,
+            "priority": 0,
+            "comment": "__probe__"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "targetObject": [
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "myra-web-api-probe.example.org",
+                    "value": "192.0.2.1",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 90003,
+                    "recordType": "A",
+                    "active": false,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 90004,
+                        "modified": "2026-10-16T16:36:59+0200",
+                        "created": "2026-10-16T16:36:59+0200"
+                    },
+                    "alternativeCname": "host2.ax4z.com.",
+                    "alternativeCnameDnsSec": "host2.ax4z-s.com.",
+                    "caaFlags": 0,
+                    "endpoints": [],
+                    "serviceType": 1,
+                    "id": 90005,
+                    "modified": "2026-10-16T16:36:59+0200",
+                    "created": "2026-10-16T16:36:59+0200",
+                    "enabled": true,
+                    "comment": "__probe__"
+                }
+            ]
+        }
+    },
+    "finding": "probe A record (192.0.2.1, inactive) with default upstreamOptions (own id + modified)"
+}

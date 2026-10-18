@@ -1,0 +1,23 @@
+{
+    "case": "80",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/settings",
+        "body": {}
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                []
+            ]
+        }
+    },
+    "finding": "v2 update: answer in data (the GET answers in targetObject)"
+}

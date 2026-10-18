@@ -1,0 +1,57 @@
+{
+    "case": "91",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/dns-records",
+        "body": {
+            "name": "__probe__.example.org",
+            "recordType": "TXT",
+            "value": "redacted-1",
+            "ttl": 300,
+            "active": false,
+            "enabled": true,
+            "priority": 0,
+            "comment": "__probe__"
+        }
+    },
+    "response": {
+        "status": 201,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "__probe__.example.org",
+                    "value": "redacted-1",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 90001,
+                    "recordType": "TXT",
+                    "active": false,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "backup": false,
+                        "down": false
+                    },
+                    "alternativeCname": "host1.ax4z.com.",
+                    "alternativeCnameDnsSec": "host1.ax4z-s.com.",
+                    "caaFlags": 0,
+                    "endpoints": [],
+                    "serviceType": 3,
+                    "id": 90009,
+                    "modified": "2026-10-16T16:37:05+0200",
+                    "created": "2026-10-16T16:37:05+0200",
+                    "enabled": true,
+                    "comment": "__probe__"
+                }
+            ]
+        }
+    },
+    "finding": "v2 create: HTTP 201"
+}

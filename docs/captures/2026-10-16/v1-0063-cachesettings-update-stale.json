@@ -1,0 +1,36 @@
+{
+    "case": "63",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/cacheSettings/map.example.org",
+        "body": {
+            "path": "/__probe__/",
+            "ttl": 60,
+            "type": "exact",
+            "notFoundTtl": 60,
+            "enforce": false,
+            "sort": 999,
+            "enabled": false,
+            "id": 90001,
+            "modified": "2026-10-16T16:18:36+0200"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The record has been edited in the meantime."
+                }
+            ],
+            "warningList": [],
+            "targetObject": []
+        }
+    },
+    "finding": "stale modified: HTTP 200 + error: true"
+}

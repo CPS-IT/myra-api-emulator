@@ -1,0 +1,33 @@
+{
+    "case": "9",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "body": {
+            "fqdn": "example.com",
+            "resource": "/__probe__/nothing.txt",
+            "recursive": false
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "CacheClearVO",
+                    "fqdn": "example.com",
+                    "resource": "/__probe__/nothing.txt",
+                    "recursive": false,
+                    "bulk": []
+                }
+            ]
+        }
+    },
+    "finding": "cache clear, single resource (sends error:false although the spec omits it)"
+}

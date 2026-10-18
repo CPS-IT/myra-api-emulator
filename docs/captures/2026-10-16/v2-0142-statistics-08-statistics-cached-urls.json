@@ -1,0 +1,34 @@
+{
+    "case": "142",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/cached-urls/1792051200/1792058399",
+        "body": {
+            "domains": [
+                "example.com"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": [
+            {
+                "url": "/path-4",
+                "count": 1242
+            },
+            {
+                "url": "/path-5",
+                "count": 1243
+            },
+            {
+                "url": "/path-6",
+                "count": 1244
+            }
+        ]
+    },
+    "finding": "bare list [{url, count}]"
+}

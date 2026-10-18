@@ -1,0 +1,254 @@
+{
+    "case": "8",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/dns-records",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "example.com",
+                    "value": "192.0.2.10",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1007,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1014,
+                        "modified": "2020-04-16T09:04:16+0200",
+                        "created": "2020-04-16T09:04:16+0200"
+                    },
+                    "alternativeCname": "example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.11"
+                        ],
+                        "ipv6": [
+                            "2001:db8::a"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1021,
+                    "modified": "2022-08-23T12:08:24+0200",
+                    "created": "2018-07-03T11:05:33+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "api.example.com",
+                    "value": "192.0.2.10",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1028,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1035,
+                        "modified": "2020-04-16T09:04:16+0200",
+                        "created": "2020-04-16T09:04:16+0200"
+                    },
+                    "alternativeCname": "api-example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "api-example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.11"
+                        ],
+                        "ipv6": [
+                            "2001:db8::a"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1042,
+                    "modified": "2022-08-23T12:08:26+0200",
+                    "created": "2018-07-09T19:18:18+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "www.example.com",
+                    "value": "192.0.2.10",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1049,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1056,
+                        "modified": "2020-04-16T09:04:16+0200",
+                        "created": "2020-04-16T09:04:16+0200"
+                    },
+                    "alternativeCname": "www-example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "www-example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.11"
+                        ],
+                        "ipv6": [
+                            "2001:db8::a"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1063,
+                    "modified": "2022-08-23T12:19:00+0200",
+                    "created": "2018-09-26T10:49:52+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "staging.example.com",
+                    "value": "192.0.2.12",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1070,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1077,
+                        "modified": "2022-10-04T13:40:18+0200",
+                        "created": "2022-10-04T13:40:18+0200"
+                    },
+                    "alternativeCname": "staging-example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "staging-example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.13"
+                        ],
+                        "ipv6": [
+                            "2001:db8::b"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1084,
+                    "modified": "2025-01-20T14:02:58+0100",
+                    "created": "2022-10-04T13:40:18+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "api.staging.example.com",
+                    "value": "192.0.2.12",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1091,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1098,
+                        "modified": "2022-10-04T13:40:48+0200",
+                        "created": "2022-10-04T13:40:48+0200"
+                    },
+                    "alternativeCname": "api-staging-example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "api-staging-example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.14"
+                        ],
+                        "ipv6": [
+                            "2001:db8::c"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1105,
+                    "modified": "2022-10-04T13:40:48+0200",
+                    "created": "2022-10-04T13:40:48+0200",
+                    "enabled": true
+                },
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "map.example.com",
+                    "value": "192.0.2.10",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 1112,
+                    "recordType": "A",
+                    "active": true,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 1,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 1119,
+                        "modified": "2025-10-23T09:26:25+0200",
+                        "created": "2025-10-23T09:26:25+0200"
+                    },
+                    "alternativeCname": "map-example-com.cdn.example.net.",
+                    "alternativeCnameDnsSec": "map-example-com.cdn-s.example.net.",
+                    "caaFlags": 0,
+                    "endpoints": {
+                        "ipv4": [
+                            "192.0.2.15"
+                        ],
+                        "ipv6": [
+                            "2001:db8::d"
+                        ]
+                    },
+                    "serviceType": 1,
+                    "id": 1126,
+                    "modified": "2025-10-23T09:26:27+0200",
+                    "created": "2025-10-23T09:26:25+0200",
+                    "enabled": false,
+                    "comment": "redacted-comment"
+                }
+            ],
+            "page": 1,
+            "count": 6,
+            "pageSize": 50
+        }
+    },
+    "finding": "DNS records of a domain"
+}

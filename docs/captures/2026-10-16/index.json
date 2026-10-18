@@ -1,0 +1,1942 @@
+[
+    {
+        "case": "1",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/dnsRecords/example.com/1",
+        "status": 200,
+        "finding": "DNS records of a domain",
+        "file": "v1-0001-dns-records-of-a-domain.json"
+    },
+    {
+        "case": "2",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "status": 200,
+        "finding": "cache clear, single resource",
+        "file": "v1-0002-cache-clear-single-resource.json"
+    },
+    {
+        "case": "3",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "status": 200,
+        "finding": "cache clear, bulk",
+        "file": "v1-0003-cache-clear-bulk.json"
+    },
+    {
+        "case": "4",
+        "apiVersion": "v1",
+        "auth": "HMAC (wrong secret)",
+        "method": "GET",
+        "path": "/en/rapi/dnsRecords/example.com/1",
+        "status": 403,
+        "finding": "wrong credentials: text/plain body, no envelope",
+        "file": "v1-0004-wrong-credentials.json"
+    },
+    {
+        "case": "5",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/dnsRecords/does-not-exist.invalid/1",
+        "status": 403,
+        "finding": "unknown domain: EMPTY body, indistinguishable from an auth failure",
+        "file": "v1-0005-unknown-domain.json"
+    },
+    {
+        "case": "6.1",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "status": 403,
+        "finding": "malformed body",
+        "file": "v1-06_1-malformed-body.json"
+    },
+    {
+        "case": "6.2",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "status": 403,
+        "finding": "fqdn not in the domain: violation with code",
+        "file": "v1-06_2-fqdn-not-in-the-domain.json"
+    },
+    {
+        "case": "7",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains",
+        "status": 200,
+        "finding": "domain list (name -> id)",
+        "file": "v2-0007-domain-list.json"
+    },
+    {
+        "case": "8",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/dns-records",
+        "status": 200,
+        "finding": "DNS records of a domain",
+        "file": "v2-0008-dns-records-of-a-domain.json"
+    },
+    {
+        "case": "9",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "status": 200,
+        "finding": "cache clear, single resource (sends error:false although the spec omits it)",
+        "file": "v2-0009-cache-clear-single-resource.json"
+    },
+    {
+        "case": "10",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "status": 200,
+        "finding": "cache clear, bulk",
+        "file": "v2-0010-cache-clear-bulk.json"
+    },
+    {
+        "case": "11",
+        "apiVersion": "v2",
+        "auth": "Bearer (wrong token)",
+        "method": "GET",
+        "path": "/domains",
+        "status": 403,
+        "finding": "wrong credentials: EMPTY body",
+        "file": "v2-0011-wrong-credentials.json"
+    },
+    {
+        "case": "12",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/999999999/dns-records",
+        "status": 403,
+        "finding": "unknown domain id (without any token once: 401 {\"error\":\"Session has been revoked\"})",
+        "file": "v2-0012-unknown-domain-id.json"
+    },
+    {
+        "case": "13.1",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "status": 403,
+        "finding": "malformed body (same answer even without a domain id)",
+        "file": "v2-13_1-malformed-body.json"
+    },
+    {
+        "case": "13.2",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "status": 403,
+        "finding": "fqdn not in the domain: violation with code",
+        "file": "v2-13_2-fqdn-not-in-the-domain.json"
+    },
+    {
+        "case": "14",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "status": 403,
+        "finding": "wrong type: violation with propertyPath",
+        "file": "v2-0014-wrong-type.json"
+    },
+    {
+        "case": "15",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/example.com/cache-clear",
+        "status": 403,
+        "finding": "domain NAME instead of id: rejected, v2 needs the id",
+        "file": "v2-0015-domain-name-instead-of-id.json"
+    },
+    {
+        "case": "16",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains?page=2",
+        "status": 200,
+        "finding": "paging: ?page=2 honoured, empty data past the last page, count = total",
+        "file": "v2-0016-domain-list-page-2.json"
+    },
+    {
+        "case": "17",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/domains/1",
+        "status": 200,
+        "finding": "domain list v1: the same DomainVO objects as v2 (identical field by field, same ids); no paused/",
+        "file": "v1-0017-domain-list.json"
+    },
+    {
+        "case": "18",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/domains/2",
+        "status": 200,
+        "finding": "paging v1: page in the path, echoed as page: 2; past the last page list is empty; count = t",
+        "file": "v1-0018-domain-list-page-2.json"
+    },
+    {
+        "case": "19",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/redirects/example.com/1",
+        "status": 200,
+        "finding": "redirects of the zone apex: per vhost (subDomainName = the apex only)",
+        "file": "v1-0019-redirects-apex.json"
+    },
+    {
+        "case": "20",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/redirects/www.example.com/1",
+        "status": 200,
+        "finding": "v1 takes a subdomain where the manual says {domain}: only that vhost's redirects",
+        "file": "v1-0020-redirects-subdomain.json"
+    },
+    {
+        "case": "21",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/redirects/example.org/1",
+        "status": 200,
+        "finding": "no redirects: empty list, count 0",
+        "file": "v1-0021-redirects-empty.json"
+    },
+    {
+        "case": "22",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/redirects/example.com",
+        "status": 200,
+        "finding": "same DnsRedirectVO as v1; v2 lists per vHostName",
+        "file": "v2-0022-redirects-apex.json"
+    },
+    {
+        "case": "23",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/redirects/example.com/90392",
+        "status": 200,
+        "finding": "get by id: data is a one-element list, no paging fields",
+        "file": "v2-0023-redirect-by-id.json"
+    },
+    {
+        "case": "24",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/redirects/example.org",
+        "status": 403,
+        "finding": "vHostName that is no vhost: 403 'The entity does not exist.'",
+        "file": "v2-0024-redirects-unknown-vhost.json"
+    },
+    {
+        "case": "25",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/redirects/map.example.org",
+        "status": 200,
+        "finding": "v1 create: PUT, answer in targetObject; enabled: false is honoured although the manual does not list it",
+        "file": "v1-0025-redirect-create.json"
+    },
+    {
+        "case": "26",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/redirects/map.example.org",
+        "status": 200,
+        "finding": "v1 update: POST with id + modified, answer with the new modified",
+        "file": "v1-0026-redirect-update.json"
+    },
+    {
+        "case": "27",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/redirects/map.example.org",
+        "status": 200,
+        "finding": "optimistic lock: a stale modified is rejected with HTTP 200 (!) and error: true",
+        "file": "v1-0027-redirect-update-stale.json"
+    },
+    {
+        "case": "28",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/redirects/map.example.org/1",
+        "status": 200,
+        "finding": "list after the update",
+        "file": "v1-0028-redirect-list.json"
+    },
+    {
+        "case": "29",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "DELETE",
+        "path": "/en/rapi/redirects/map.example.org",
+        "status": 200,
+        "finding": "v1 delete: body {id, modified}; JSON answer although Content-Type is text/html",
+        "file": "v1-0029-redirect-delete.json"
+    },
+    {
+        "case": "30",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/redirects/map.example.org/1",
+        "status": 200,
+        "finding": "list after the delete: the probe is gone",
+        "file": "v1-0030-redirect-verify.json"
+    },
+    {
+        "case": "31",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/redirects/map.example.org",
+        "status": 201,
+        "finding": "v2 create: POST, HTTP 201, answer in data",
+        "file": "v2-0031-redirect-create.json"
+    },
+    {
+        "case": "32",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/redirects/map.example.org/90003",
+        "status": 200,
+        "finding": "get by id after the create",
+        "file": "v2-0032-redirect-get.json"
+    },
+    {
+        "case": "33",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/redirects/map.example.org/90003",
+        "status": 200,
+        "finding": "v2 update: PUT \u2026/{id} with id + modified",
+        "file": "v2-0033-redirect-update.json"
+    },
+    {
+        "case": "34",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/redirects/map.example.org/90003",
+        "status": 400,
+        "finding": "optimistic lock: a stale modified is rejected with HTTP 400 and error: true",
+        "file": "v2-0034-redirect-update-stale.json"
+    },
+    {
+        "case": "35",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/redirects/map.example.org",
+        "status": 200,
+        "finding": "list after the update",
+        "file": "v2-0035-redirect-list.json"
+    },
+    {
+        "case": "36",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/redirects/map.example.org/90003",
+        "status": 204,
+        "finding": "v2 delete: HTTP 204, empty body, no Content-Type",
+        "file": "v2-0036-redirect-delete.json"
+    },
+    {
+        "case": "37",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/redirects/map.example.org",
+        "status": 200,
+        "finding": "list after the delete: the probe is gone",
+        "file": "v2-0037-redirect-verify.json"
+    },
+    {
+        "case": "38",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/ipfilter/example.com/1",
+        "status": 200,
+        "finding": "IP filter of the apex: IpFilterVO, per vhost like redirects",
+        "file": "v1-0038-v1-by-domain-en-rapi-ipfilter-example-com-1.json"
+    },
+    {
+        "case": "39",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/ipfilter/www.example.com/1",
+        "status": 200,
+        "finding": "a vhost without entries: empty list",
+        "file": "v1-0039-v1-by-subdomain-en-rapi-ipfilter-www-example-com-1.json"
+    },
+    {
+        "case": "40",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/ip-filters/example.com",
+        "status": 200,
+        "finding": "same IpFilterVO as v1",
+        "file": "v2-0040-v2-by-vhost-domain-1000-ip-filters-example-com.json"
+    },
+    {
+        "case": "41",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/ip-filters/example.com/90393",
+        "status": 200,
+        "finding": "get by id: one-element data list",
+        "file": "v2-0041-v2-by-vhost-domain-1000-ip-filters-example-com-90393.json"
+    },
+    {
+        "case": "42",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/ip-filters/example.com/export",
+        "status": 200,
+        "finding": "export: text/csv with the columns IP, Expires on, Comments",
+        "file": "v2-0042-v2-by-vhost-domain-1000-ip-filters-example-com-export.json"
+    },
+    {
+        "case": "43",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/ip-filters/example.org",
+        "status": 403,
+        "finding": "a vHostName that is no vhost: 403 'The entity does not exist.'",
+        "file": "v2-0043-v2-by-vhost-domain-1140-ip-filters-example-org.json"
+    },
+    {
+        "case": "44",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/ipfilter/map.example.org",
+        "status": 200,
+        "finding": "v1 create (probe: disabled blacklist entry for 192.0.2.1)",
+        "file": "v1-0044-ipfilter-create.json"
+    },
+    {
+        "case": "45",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/ipfilter/map.example.org",
+        "status": 200,
+        "finding": "v1 update with id + modified",
+        "file": "v1-0045-ipfilter-update.json"
+    },
+    {
+        "case": "46",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/ipfilter/map.example.org",
+        "status": 200,
+        "finding": "stale modified: HTTP 200 + error: true",
+        "file": "v1-0046-ipfilter-update-stale.json"
+    },
+    {
+        "case": "47",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/ip-filters/map.example.org",
+        "status": 201,
+        "finding": "v2 create: HTTP 201",
+        "file": "v2-0047-ipfilter-create.json"
+    },
+    {
+        "case": "48",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/ip-filters/map.example.org/90002",
+        "status": 200,
+        "finding": "v2 update: PUT \u2026/{id}",
+        "file": "v2-0048-ipfilter-update.json"
+    },
+    {
+        "case": "49",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/ip-filters/map.example.org/90002",
+        "status": 400,
+        "finding": "stale modified: HTTP 400",
+        "file": "v2-0049-ipfilter-update-stale.json"
+    },
+    {
+        "case": "50",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/ip-filters/map.example.org/export?type=BLACKLIST",
+        "status": 200,
+        "finding": "export filtered by ?type=BLACKLIST",
+        "file": "v2-0050-ipfilter-export.json"
+    },
+    {
+        "case": "51",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/ip-filters/map.example.org/import?type=BLACKLIST",
+        "status": 201,
+        "finding": "import with one invalid line: HTTP 201 and error: false (the spec says true), the line as violation",
+        "file": "v2-0051-ipfilter-import-token.json"
+    },
+    {
+        "case": "52",
+        "apiVersion": "v2",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/domain/1140/ip-filters/map.example.org/import?type=BLACKLIST",
+        "status": 201,
+        "finding": "import signed with HMAC over Content-Type text/csv: works",
+        "file": "v2-0052-ipfilter-import-hmac.json"
+    },
+    {
+        "case": "53",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "DELETE",
+        "path": "/en/rapi/ipfilter/map.example.org",
+        "status": 200,
+        "finding": "v1 delete: body {id, modified}",
+        "file": "v1-0053-ipfilter-cleanup.json"
+    },
+    {
+        "case": "54",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/ip-filters/map.example.org",
+        "status": 200,
+        "finding": "list after the imports: expireDate appears only when set",
+        "file": "v2-0054-ipfilter-cleanup.json"
+    },
+    {
+        "case": "55",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/ip-filters/map.example.org/90002",
+        "status": 204,
+        "finding": "v2 delete: HTTP 204, empty",
+        "file": "v2-0055-ipfilter-cleanup.json"
+    },
+    {
+        "case": "56",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/cacheSettings/example.com/1",
+        "status": 200,
+        "finding": "cache settings of the apex: CacheSettingVO without a subdomain field",
+        "file": "v1-0056-v1-by-domain-en-rapi-cacheSettings-example-com-1.json"
+    },
+    {
+        "case": "57",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/cacheSettings/www.example.com/1",
+        "status": 200,
+        "finding": "a vhost without rules: empty list",
+        "file": "v1-0057-v1-by-subdomain-en-rapi-cacheSettings-www-example-com-1.json"
+    },
+    {
+        "case": "58",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/cacheSettings/www.example.org/1",
+        "status": 500,
+        "finding": "v1, a subdomain that is no vhost: HTTP 500, empty HTML \u2014 no envelope",
+        "file": "v1-0058-v1-by-subdomain-en-rapi-cacheSettings-www-example-org-1.json"
+    },
+    {
+        "case": "59",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/example.com/cache-settings",
+        "status": 200,
+        "finding": "same CacheSettingVO as v1; path /domain/{id}/{vHostName}/cache-settings (vhost before area)",
+        "file": "v2-0059-v2-by-vhost-domain-1000-example-com-cache-settings.json"
+    },
+    {
+        "case": "60",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/example.org/cache-settings",
+        "status": 403,
+        "finding": "a vHostName that is no vhost: 403 'The entity does not exist.'",
+        "file": "v2-0060-v2-by-vhost-domain-1140-example-org-cache-settings.json"
+    },
+    {
+        "case": "61",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/cacheSettings/map.example.org",
+        "status": 200,
+        "finding": "v1 create (probe: disabled rule for the exact path /__probe__/); notFoundTtl defaults to 60",
+        "file": "v1-0061-cachesettings-create.json"
+    },
+    {
+        "case": "62",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/cacheSettings/map.example.org",
+        "status": 200,
+        "finding": "v1 update with id + modified",
+        "file": "v1-0062-cachesettings-update.json"
+    },
+    {
+        "case": "63",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/cacheSettings/map.example.org",
+        "status": 200,
+        "finding": "stale modified: HTTP 200 + error: true",
+        "file": "v1-0063-cachesettings-update-stale.json"
+    },
+    {
+        "case": "64",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "DELETE",
+        "path": "/en/rapi/cacheSettings/map.example.org",
+        "status": 200,
+        "finding": "v1 delete: body {id, modified}",
+        "file": "v1-0064-cachesettings-cleanup.json"
+    },
+    {
+        "case": "65",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/cache-settings",
+        "status": 201,
+        "finding": "v2 create: HTTP 201",
+        "file": "v2-0065-cachesettings-create.json"
+    },
+    {
+        "case": "66",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/map.example.org/cache-settings/90002",
+        "status": 200,
+        "finding": "v2 update: PUT \u2026/cache-settings/{id}",
+        "file": "v2-0066-cachesettings-update.json"
+    },
+    {
+        "case": "67",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/map.example.org/cache-settings/90002",
+        "status": 400,
+        "finding": "stale modified: HTTP 400",
+        "file": "v2-0067-cachesettings-update-stale.json"
+    },
+    {
+        "case": "68",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/map.example.org/cache-settings/90002",
+        "status": 204,
+        "finding": "v2 delete: HTTP 204, empty",
+        "file": "v2-0068-cachesettings-cleanup.json"
+    },
+    {
+        "case": "69",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/subdomainSetting/example.com",
+        "status": 200,
+        "finding": "subdomain settings: targetObject = 5 inheritance layers, domain = the vhost's own, parent = inherited (the manual's structure is outdated)",
+        "file": "v1-0069-v1-by-domain-en-rapi-subdomainSetting-example-com.json"
+    },
+    {
+        "case": "70",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/subdomainSetting/www.example.com",
+        "status": 200,
+        "finding": "a vhost with own settings: domain holds them, the last layer equals domain",
+        "file": "v1-0070-v1-by-subdomain-en-rapi-subdomainSetting-www-example-com.json"
+    },
+    {
+        "case": "71",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/subdomainSetting/example.com?flat=",
+        "status": 200,
+        "finding": "?flat: the merged settings as a plain map, no envelope; v1 sends numbers as strings",
+        "file": "v1-0071-v1-by-domain-en-rapi-subdomainSetting-example-com-flat.json"
+    },
+    {
+        "case": "72",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/subdomainSetting/www.example.org",
+        "status": 500,
+        "finding": "v1, a subdomain that is no vhost: HTTP 500, empty HTML",
+        "file": "v1-0072-v1-by-subdomain-en-rapi-subdomainSetting-www-example-org.json"
+    },
+    {
+        "case": "73",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/example.com/settings",
+        "status": 200,
+        "finding": "v2 GET answers in targetObject like v1 (not data)",
+        "file": "v2-0073-v2-by-vhost-domain-1000-example-com-settings.json"
+    },
+    {
+        "case": "74",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/example.org/settings",
+        "status": 403,
+        "finding": "a vHostName that is no vhost: 403 'The entity does not exist.'",
+        "file": "v2-0074-v2-by-vhost-domain-1140-example-org-settings.json"
+    },
+    {
+        "case": "75",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/subdomainSetting/map.example.org",
+        "status": 200,
+        "finding": "a vhost without own settings: domain is [] (a JSON list)",
+        "file": "v1-0075-settings-get.json"
+    },
+    {
+        "case": "76",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/subdomainSetting/map.example.org?flat",
+        "status": 200,
+        "finding": "?flat of that vhost (v1: numbers as strings)",
+        "file": "v1-0076-settings-get-flat.json"
+    },
+    {
+        "case": "77",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/subdomainSetting/map.example.org",
+        "status": 200,
+        "finding": "update with the unchanged own settings ({}): accepted, answer echoes them in targetObject",
+        "file": "v1-0077-settings-update-unchanged.json"
+    },
+    {
+        "case": "78",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/map.example.org/settings",
+        "status": 200,
+        "finding": "v2: same structure as v1",
+        "file": "v2-0078-settings-get.json"
+    },
+    {
+        "case": "79",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/map.example.org/settings?flat",
+        "status": 200,
+        "finding": "?flat in v2 too (not in the spec); v2 sends numbers as numbers",
+        "file": "v2-0079-settings-get-flat.json"
+    },
+    {
+        "case": "80",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/settings",
+        "status": 200,
+        "finding": "v2 update: answer in data (the GET answers in targetObject)",
+        "file": "v2-0080-settings-update-unchanged.json"
+    },
+    {
+        "case": "81",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/dnsRecords/example.com/1?loadbalancer=true&recordTypes=A,AAAA,CNAME",
+        "status": 200,
+        "finding": "load balancing in v1: the DNS list with ?loadbalancer=true&recordTypes=A,AAAA,CNAME \u2014 records with upstreamOptions",
+        "file": "v1-0081-v1-by-domain-en-rapi-dnsRecords-example-com-1-loadbalancer-true-recordTypes-A-AAAA-CNAME.json"
+    },
+    {
+        "case": "82",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/load-balancing",
+        "status": 200,
+        "finding": "load balancing in v2: /domain/{id}/load-balancing, the same records",
+        "file": "v2-0082-v2-by-domain-domain-1000-load-balancing.json"
+    },
+    {
+        "case": "83",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/dns-records/1021",
+        "status": 200,
+        "finding": "get by id: one-element data list",
+        "file": "v2-0083-DNS-records-domain-1000-dns-records-1021.json"
+    },
+    {
+        "case": "84",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/vhost/1007/dns-records",
+        "status": 200,
+        "finding": "the records of one vhost, by its v2 vhostId",
+        "file": "v2-0084-DNS-records-domain-1000-vhost-1007-dns-records.json"
+    },
+    {
+        "case": "85",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "status": 200,
+        "finding": "v1 create (probe: inactive TXT __probe__.<domain>); a TXT record answers a partial UpstreamOptionsVO (backup, down only)",
+        "file": "v1-0085-dns-create-txt.json"
+    },
+    {
+        "case": "86",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "status": 200,
+        "finding": "v1 update: the complete record as read, changes on top",
+        "file": "v1-0086-dns-update.json"
+    },
+    {
+        "case": "87",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "status": 200,
+        "finding": "stale modified: HTTP 200 + error: true",
+        "file": "v1-0087-dns-update-stale.json"
+    },
+    {
+        "case": "88",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "status": 200,
+        "finding": "probe A record (192.0.2.1, inactive) with default upstreamOptions (own id + modified)",
+        "file": "v1-0088-dns-create-a.json"
+    },
+    {
+        "case": "89",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "status": 200,
+        "finding": "load balancing changed through the normal update (weight 1 \u2192 2)",
+        "file": "v1-0089-dns-update-load-balancing.json"
+    },
+    {
+        "case": "90",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "DELETE",
+        "path": "/en/rapi/dnsRecords/example.org",
+        "status": 200,
+        "finding": "v1 delete: body {id, modified}",
+        "file": "v1-0090-dns-cleanup.json"
+    },
+    {
+        "case": "91",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/dns-records",
+        "status": 201,
+        "finding": "v2 create: HTTP 201",
+        "file": "v2-0091-dns-create-txt.json"
+    },
+    {
+        "case": "92",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/dns-records/90009",
+        "status": 200,
+        "finding": "v2 update: PUT \u2026/dns-records/{id}",
+        "file": "v2-0092-dns-update.json"
+    },
+    {
+        "case": "93",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/dns-records/90009",
+        "status": 400,
+        "finding": "stale modified: HTTP 400",
+        "file": "v2-0093-dns-update-stale.json"
+    },
+    {
+        "case": "94",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/dns-records",
+        "status": 201,
+        "finding": "probe A record in v2",
+        "file": "v2-0094-dns-create-a.json"
+    },
+    {
+        "case": "95",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/dns-records/90011",
+        "status": 200,
+        "finding": "load balancing changed through the normal update in v2 too (weight 1 \u2192 2)",
+        "file": "v2-0095-dns-update-load-balancing.json"
+    },
+    {
+        "case": "96",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/dns-records/90011/load-balancing",
+        "status": 500,
+        "finding": "PUT \u2026/{id}/load-balancing: HTTP 500 'An internal error occurred' for the inactive probe record (also with the upstream object's own id) \u2014 unverified",
+        "file": "v2-0096-dns-load-balancing-endpoint.json"
+    },
+    {
+        "case": "97",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/dns-records/90009",
+        "status": 204,
+        "finding": "v2 delete: HTTP 204",
+        "file": "v2-0097-dns-cleanup.json"
+    },
+    {
+        "case": "98",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "PUT",
+        "path": "/en/rapi/maintenance/map.example.org",
+        "status": 200,
+        "finding": "v1 create (probe: 2099, never active): Myra returns start/end in its own offset (+0100) \u2014 the same instant",
+        "file": "v1-0098-maintenance-create.json"
+    },
+    {
+        "case": "99",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/maintenance/map.example.org",
+        "status": 200,
+        "finding": "v1 update: the complete object as read, changes on top",
+        "file": "v1-0099-maintenance-update.json"
+    },
+    {
+        "case": "100",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/maintenance/map.example.org",
+        "status": 200,
+        "finding": "stale modified: HTTP 200 + error: true",
+        "file": "v1-0100-maintenance-update-stale.json"
+    },
+    {
+        "case": "101",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/maintenance/map.example.org/1",
+        "status": 200,
+        "finding": "list of the vhost with the probe",
+        "file": "v1-0101-maintenance-cleanup.json"
+    },
+    {
+        "case": "102",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "DELETE",
+        "path": "/en/rapi/maintenance/map.example.org",
+        "status": 200,
+        "finding": "v1 delete: body {id, fqdn} as the manual says",
+        "file": "v1-0102-maintenance-cleanup.json"
+    },
+    {
+        "case": "103",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/maintenances",
+        "status": 200,
+        "finding": "v2 create: HTTP 200 (not 201), active settable (sent false)",
+        "file": "v2-0103-maintenance-create.json"
+    },
+    {
+        "case": "104",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/map.example.org/maintenances/90003",
+        "status": 200,
+        "finding": "v2 update: PUT \u2026/maintenances/{id}",
+        "file": "v2-0104-maintenance-update.json"
+    },
+    {
+        "case": "105",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/map.example.org/maintenances/90003",
+        "status": 400,
+        "finding": "stale modified: HTTP 400",
+        "file": "v2-0105-maintenance-update-stale.json"
+    },
+    {
+        "case": "106",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/maintenances/90003",
+        "status": 200,
+        "finding": "domain-wide get by id: adds permissions",
+        "file": "v2-0106-maintenance-get.json"
+    },
+    {
+        "case": "107",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/maintenances?presentAndFuture=true",
+        "status": 200,
+        "finding": "domain-wide list with presentAndFuture=true",
+        "file": "v2-0107-maintenance-for-domain.json"
+    },
+    {
+        "case": "108",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/maintenance-templates",
+        "status": 201,
+        "finding": "template create: HTTP 201 (stored HTML only)",
+        "file": "v2-0108-maintenance-template-create.json"
+    },
+    {
+        "case": "109",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "PUT",
+        "path": "/domain/1140/maintenance-templates/90004",
+        "status": 200,
+        "finding": "template update with id + modified",
+        "file": "v2-0109-maintenance-template-update.json"
+    },
+    {
+        "case": "110",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/maintenance-templates",
+        "status": 200,
+        "finding": "template list",
+        "file": "v2-0110-maintenance-template-list.json"
+    },
+    {
+        "case": "111",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/maintenance-templates/90004",
+        "status": 204,
+        "finding": "template delete: HTTP 204",
+        "file": "v2-0111-maintenance-template-delete.json"
+    },
+    {
+        "case": "112",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/map.example.org/maintenances",
+        "status": 200,
+        "finding": "list of the vhost with the probe",
+        "file": "v2-0112-maintenance-cleanup.json"
+    },
+    {
+        "case": "113",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/map.example.org/maintenances/90003",
+        "status": 204,
+        "finding": "v2 delete: HTTP 204",
+        "file": "v2-0113-maintenance-cleanup.json"
+    },
+    {
+        "case": "114",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/errorpages/example.com/1",
+        "status": 200,
+        "finding": "v1 lists error pages grouped by subdomain ({subDomainName, error: {code: ErrorPageVO}}), without content, pageSize 10",
+        "file": "v1-0114-Error-pages-en-rapi-errorpages-example-com-1.json"
+    },
+    {
+        "case": "115",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/errorpages",
+        "status": 200,
+        "finding": "v2 lists them flat \u2014 UNPAGED: page 0, pageSize 10^16 (a naive 'next page' loop never ends; it did)",
+        "file": "v2-0115-v2-by-domain-domain-1000-errorpages.json"
+    },
+    {
+        "case": "116",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/errorpages-grouped",
+        "status": 200,
+        "finding": "errorpages-grouped: data keyed by subdomain",
+        "file": "v2-0116-v2-by-domain-domain-1000-errorpages-grouped.json"
+    },
+    {
+        "case": "117",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/errorpages/90400",
+        "status": 200,
+        "finding": "get by id: with content",
+        "file": "v2-0117-v2-by-domain-domain-1000-errorpages-90400.json"
+    },
+    {
+        "case": "118",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/errorpages/example.org",
+        "status": 200,
+        "finding": "v1 set (probe: code 413, free on the vhost): POST with pageContent + selection",
+        "file": "v1-0118-errorpages-set.json"
+    },
+    {
+        "case": "119",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/errorpages/example.org/1",
+        "status": 200,
+        "finding": "the vhost's list with the probe page",
+        "file": "v1-0119-errorpages-list.json"
+    },
+    {
+        "case": "120",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/errorpage/90001",
+        "status": 200,
+        "finding": "v1 errorpage/{id}: answered like a list \u2014 one group in list, with content",
+        "file": "v1-0120-errorpages-get.json"
+    },
+    {
+        "case": "121",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/errorpages/example.org",
+        "status": 200,
+        "finding": "set again replaces the content (there is no update)",
+        "file": "v1-0121-errorpages-replace.json"
+    },
+    {
+        "case": "122",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "DELETE",
+        "path": "/en/rapi/errorpages/example.org",
+        "status": 200,
+        "finding": "v1 delete: DELETE with the selection",
+        "file": "v1-0122-errorpages-delete.json"
+    },
+    {
+        "case": "123",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/errorpages",
+        "status": 201,
+        "finding": "v2 set: HTTP 201",
+        "file": "v2-0123-errorpages-set.json"
+    },
+    {
+        "case": "124",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1140/errorpages",
+        "status": 200,
+        "finding": "the list with the probe page, unpaged",
+        "file": "v2-0124-errorpages-list.json"
+    },
+    {
+        "case": "125",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/errorpages",
+        "status": 201,
+        "finding": "set again: HTTP 201, content replaced",
+        "file": "v2-0125-errorpages-replace.json"
+    },
+    {
+        "case": "126",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "DELETE",
+        "path": "/domain/1140/errorpages",
+        "status": 204,
+        "finding": "v2 delete: HTTP 204",
+        "file": "v2-0126-errorpages-delete.json"
+    },
+    {
+        "case": "127",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/networks",
+        "status": 200,
+        "finding": "v1 lists only the enabled ranges (22) \u2014 exactly the enabled ones of v2",
+        "file": "v1-0127-ip-ranges-networks.json"
+    },
+    {
+        "case": "128",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/networks?page=2&pageSize=10",
+        "status": 200,
+        "finding": "v1 pages by query (?page=&pageSize=), although the manual shows none",
+        "file": "v1-0128-probe-en-rapi-networks-page-2-pageSize-10.json"
+    },
+    {
+        "case": "129",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/networks/2",
+        "status": 403,
+        "finding": "no /networks/{page} route: HTTP 403, empty body",
+        "file": "v1-0129-probe-en-rapi-networks-2.json"
+    },
+    {
+        "case": "130",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/ip-ranges",
+        "status": 200,
+        "finding": "v2 lists ALL ranges (37), incl. 15 disabled with validTo in the past; same objects and ids as v1",
+        "file": "v2-0130-ip-ranges.json"
+    },
+    {
+        "case": "131",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/ip-ranges?page=2&pageSize=10",
+        "status": 200,
+        "finding": "v2 pages by query (?page=&pageSize=; separate run, so other fake ids)",
+        "file": "v2-0131-probe-ip-ranges-page-2-pageSize-10.json"
+    },
+    {
+        "case": "132",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/statistic/query",
+        "status": 200,
+        "finding": "statistic query (2 h; metric numbers, URLs scrubbed): StatisticVO WITHOUT envelope (no error key), targetObject null; histogram buckets {value} keyed by ms (the manual: min/max/avg/sum); response_codes stats = map code \u2192 {min,max,sum,avg} incl. key Other; dates echoed as +0200",
+        "file": "v1-0132-statistics-01-en-rapi-statistic-query.json"
+    },
+    {
+        "case": "133",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "POST",
+        "path": "/en/rapi/statistic/query",
+        "status": 500,
+        "finding": "an unknown data source: HTTP 500, empty body",
+        "file": "v1-0133-statistics-12-en-rapi-statistic-query.json"
+    },
+    {
+        "case": "134",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistic/query",
+        "status": 200,
+        "finding": "v2: the same request, the same StatisticVO as v1 (no envelope)",
+        "file": "v2-0134-statistics-02-statistic-query.json"
+    },
+    {
+        "case": "135",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/statistics/total-domain-requests/1792051200/1792058399",
+        "status": 200,
+        "finding": "all domains (GET, unix seconds in the path): {graph: name \u2192 {name, max, sum, data: [{x ms, y}]}, data: totals}; graph max/sum 0",
+        "file": "v2-0135-statistics-03-statistics-total-domain-requests.json"
+    },
+    {
+        "case": "136",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/statistics/total-domain-traffic/1792051200/1792058399",
+        "status": 200,
+        "finding": "all domains: the graphs WITHOUT a graph/data wrapper",
+        "file": "v2-0136-statistics-04-statistics-total-domain-traffic.json"
+    },
+    {
+        "case": "137",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/total-domain-requests/1792051200/1792058399",
+        "status": 200,
+        "finding": "POST with {domains, subDomains}: same shape as GET",
+        "file": "v2-0137-statistics-05-statistics-total-domain-requests.json"
+    },
+    {
+        "case": "138",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/http-status-codes/1792051200/1792058399",
+        "status": 200,
+        "finding": "a bare JSON list (no envelope): [{status_code, value}], all codes Myra knows (37)",
+        "file": "v2-0138-statistics-06-statistics-http-status-codes.json"
+    },
+    {
+        "case": "139",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/http-status-codes/1792051200/1792058399",
+        "status": 200,
+        "finding": "a quiet domain: the same 37 codes, value 0",
+        "file": "v2-0139-statistics-http-status-codes.json"
+    },
+    {
+        "case": "140",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/top-urls/1792051200/1792058399",
+        "status": 200,
+        "finding": "bare list [{url, count, cost}], 10 entries",
+        "file": "v2-0140-statistics-07-statistics-top-urls.json"
+    },
+    {
+        "case": "141",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/top-urls/1792051200/1792058399",
+        "status": 200,
+        "finding": "a quiet domain: the body null (not [])",
+        "file": "v2-0141-statistics-top-urls.json"
+    },
+    {
+        "case": "142",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/cached-urls/1792051200/1792058399",
+        "status": 200,
+        "finding": "bare list [{url, count}]",
+        "file": "v2-0142-statistics-08-statistics-cached-urls.json"
+    },
+    {
+        "case": "143",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/world-map/1792051200/1792058399/total_requests/desc",
+        "status": 200,
+        "finding": "bare list per country: totals + astype list (ASN names redacted)",
+        "file": "v2-0143-statistics-09-statistics-world-map.json"
+    },
+    {
+        "case": "144",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/histogram/1792051200/1792058399/total-requests/hourly/0/1",
+        "status": 200,
+        "finding": "{group: name \u2192 {graphData: {name, max, sum, data}}} per vhost + ALL-{domainId}; data null for vhosts without requests",
+        "file": "v2-0144-statistics-10-statistics-histogram.json"
+    },
+    {
+        "case": "145",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/top-urls/1792051200/1792058399",
+        "status": 400,
+        "finding": "a domain not in the account: HTTP 400, INTERNAL_ERROR envelope",
+        "file": "v2-0145-statistics-11-statistics-top-urls.json"
+    },
+    {
+        "case": "146",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/statistics/histogram/1792051200/1792058399/redacted-137/hourly/0/1",
+        "status": 403,
+        "finding": "an unknown chart: HTTP 403 \"The entity does not exist.\"",
+        "file": "v2-0146-statistics-13-statistics-histogram.json"
+    },
+    {
+        "case": "147",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/subdomains",
+        "status": 200,
+        "finding": "all vhosts of the account (no objectType): label = FQDN, name/value with dot, domainName/domainId, isActive, paused, access, permissions",
+        "file": "v2-0147-Subdomains-011-subdomains.json"
+    },
+    {
+        "case": "148",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/subdomains?page=2&pageSize=2",
+        "status": 200,
+        "finding": "the account list IGNORES paging: page 2, pageSize 2 in the answer, yet all 7 entries",
+        "file": "v2-0148-probe-subdomains-page-2-pageSize-2.json"
+    },
+    {
+        "case": "149",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/subdomains?search=www",
+        "status": 200,
+        "finding": "?search= matches parts of the name",
+        "file": "v2-0149-probe-subdomains-search-www.json"
+    },
+    {
+        "case": "150",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/subdomains?search=example.com&filterType=exact",
+        "status": 200,
+        "finding": "?search=\u2026&filterType=exact: only that name",
+        "file": "v2-0150-probe-subdomains-search-example-com-filterType-exact.json"
+    },
+    {
+        "case": "151",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/subdomains",
+        "status": 200,
+        "finding": "the vhosts of one domain",
+        "file": "v2-0151-v2-by-domain-054-domain-1000-subdomains.json"
+    },
+    {
+        "case": "152",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/subdomains?page=2&pageSize=2",
+        "status": 200,
+        "finding": "per domain, paging works",
+        "file": "v2-0152-probe-domain-1000-subdomains-page-2-pageSize-2.json"
+    },
+    {
+        "case": "153",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/subdomains?search=www",
+        "status": 200,
+        "finding": "?search= per domain",
+        "file": "v2-0153-probe-domain-1000-subdomains-search-www.json"
+    },
+    {
+        "case": "154",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/subdomains?active=true&isActive=true",
+        "status": 200,
+        "finding": "?active=true&isActive=true: adds a field active, same entries (all are active)",
+        "file": "v2-0154-probe-domain-1000-subdomains-active-true-isActive-true.json"
+    },
+    {
+        "case": "155",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1000",
+        "status": 200,
+        "finding": "a domain by id: DomainVO with permissions, label, verified, environment",
+        "file": "v2-0155-v2-by-domain-046-domains-1000.json"
+    },
+    {
+        "case": "156",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1000/verification",
+        "status": 200,
+        "finding": "verification status: verified, recordNames, conflictingNames, foreignDescendantsExist",
+        "file": "v2-0156-v2-by-domain-051-domains-1000-verification.json"
+    },
+    {
+        "case": "157",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1000/foreign-descendants",
+        "status": 403,
+        "finding": "foreign-descendants: HTTP 403, empty body (this account)",
+        "file": "v2-0157-v2-by-domain-052-domains-1000-foreign-descendants.json"
+    },
+    {
+        "case": "158",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/certificates/example.com/1",
+        "status": 200,
+        "finding": "v1 certificates of a domain: SslCertVO (subject, validity, fingerprint, serialNumber, subjectAlternatives, subdomains, intermediates, sslConfigurationName, managed, \u2026) \u2014 fingerprints/serials faked as hex pairs",
+        "file": "v1-0158-probe-en-rapi-certificates-example-com-1.json"
+    },
+    {
+        "case": "159",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/certificates/www.example.com/1",
+        "status": 200,
+        "finding": "v1 with a subdomain: the same 4 \u2014 certificates are per domain, not filtered by vhost",
+        "file": "v1-0159-probe-en-rapi-certificates-www-example-com-1.json"
+    },
+    {
+        "case": "160",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/certificates/example.org/1",
+        "status": 200,
+        "finding": "a domain without certificates",
+        "file": "v1-0160-v1-by-domain-085-certificates-empty.json"
+    },
+    {
+        "case": "161",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/ssl/certificates",
+        "status": 200,
+        "finding": "v2: the same SslCertVOs as v1",
+        "file": "v2-0161-probe-domain-1000-ssl-certificates.json"
+    },
+    {
+        "case": "162",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/ssl/certificates?page=2&pageSize=2",
+        "status": 200,
+        "finding": "v2 pages by query",
+        "file": "v2-0162-probe-domain-1000-ssl-certificates-page-2-pagesize-2.json"
+    },
+    {
+        "case": "163",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domain/1000/ssl/certificates/90001",
+        "status": 200,
+        "finding": "v2 get by id: one-element data",
+        "file": "v2-0163-probe-domain-1000-ssl-certificates-90001.json"
+    },
+    {
+        "case": "164",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/ssl-configurations",
+        "status": 200,
+        "finding": "Myra's SSL configurations (name, ciphers, tls13Ciphers, protocols; names and cipher lists redacted by the anonymiser)",
+        "file": "v2-0164-probe-ssl-configurations.json"
+    },
+    {
+        "case": "165",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/waf/conditions",
+        "status": 200,
+        "finding": "WAF condition catalogue (account-independent): WafConditionVO name, category, alias, key, availablePhases; labels redacted by the anonymiser",
+        "file": "v2-0165-waf-waf-conditions.json"
+    },
+    {
+        "case": "166",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/waf/conditions/matching-types",
+        "status": 200,
+        "finding": "matching types by category (default, score, country, \u2026): a map, not a list",
+        "file": "v2-0166-waf-waf-conditions-matching-types.json"
+    },
+    {
+        "case": "167",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/waf/actions",
+        "status": 200,
+        "finding": "WAF action catalogue: WafActionVO name, type, availablePhases; forceCustomValues is an int here (bool in conditions)",
+        "file": "v2-0167-waf-waf-actions.json"
+    },
+    {
+        "case": "168",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/waf/actions/values",
+        "status": 200,
+        "finding": "allowed values per action type: {customKey: type \u2192 value \u2192 label, requiresValue: type \u2192 value \u2192 bool}",
+        "file": "v2-0168-waf-waf-actions-values.json"
+    },
+    {
+        "case": "169",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/waf/countries",
+        "status": 200,
+        "finding": "250 countries in ONE answer although pageSize says 50 (unpaged like the account's subdomains); names redacted",
+        "file": "v2-0169-waf-waf-countries.json"
+    },
+    {
+        "case": "170",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/me",
+        "status": 200,
+        "finding": "the token's own user: UserExtendedVO (sessions with IP/user agent, rootGroupRoles); names redacted, e-mails userN@example.com",
+        "file": "v2-0170-probe-user-me.json"
+    },
+    {
+        "case": "171",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/users",
+        "status": 200,
+        "finding": "the organisation's users: UserVO",
+        "file": "v2-0171-probe-users.json"
+    },
+    {
+        "case": "172",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/users/90003",
+        "status": 200,
+        "finding": "a user by id: one-element data",
+        "file": "v2-0172-probe-users-90003.json"
+    },
+    {
+        "case": "173",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/90003/groups",
+        "status": 200,
+        "finding": "the groups of a user: GroupVO (roles, membersCount, type)",
+        "file": "v2-0173-probe-user-90003-groups.json"
+    },
+    {
+        "case": "174",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/90003/api-keys",
+        "status": 200,
+        "finding": "the API keys of a user: ApiKeyVO with the public key only (no secret); key and name redacted",
+        "file": "v2-0174-probe-user-90003-api-keys.json"
+    },
+    {
+        "case": "175",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/90003/activities",
+        "status": 200,
+        "finding": "a user's activities (logins): paged (176 entries, 50 per page); geo coordinates zeroed, browser versions came out as documentation IPs",
+        "file": "v2-0175-probe-user-90003-activities.json"
+    },
+    {
+        "case": "176",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/90003/permissions",
+        "status": 200,
+        "finding": "a user's permissions: objectType (Domain, DnsRedirect, \u2026), objectPermissionType, objectInstance, action",
+        "file": "v2-0176-probe-user-90003-permissions.json"
+    },
+    {
+        "case": "177",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/permissions",
+        "status": 200,
+        "finding": "the token user's permissions: UNPAGED (pageSize = count = 94)",
+        "file": "v2-0177-probe-user-permissions.json"
+    },
+    {
+        "case": "178",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/tokens",
+        "status": 200,
+        "finding": "API tokens: TokenVO without the token value (name, enabled, expiryDate, lastUsedDate)",
+        "file": "v2-0178-probe-user-tokens.json"
+    },
+    {
+        "case": "179",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/groups",
+        "status": 200,
+        "finding": "the organisation's groups",
+        "file": "v2-0179-probe-user-groups.json"
+    },
+    {
+        "case": "180",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/groups/90001",
+        "status": 200,
+        "finding": "a group by id (roles empty here, filled in the list)",
+        "file": "v2-0180-probe-user-groups-90001.json"
+    },
+    {
+        "case": "181",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/group/90001/users",
+        "status": 200,
+        "finding": "the members of a group",
+        "file": "v2-0181-probe-user-group-90001-users.json"
+    },
+    {
+        "case": "182",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/user/group/90001/permissions",
+        "status": 200,
+        "finding": "the permissions of a group",
+        "file": "v2-0182-probe-user-group-90001-permissions.json"
+    },
+    {
+        "case": "183",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/organization/contacts",
+        "status": 200,
+        "finding": "organisation contacts: OrganizationContactVO (types, priorities, reminders); names and phone redacted",
+        "file": "v2-0183-probe-organization-contacts.json"
+    },
+    {
+        "case": "184",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/organization/contact-types",
+        "status": 200,
+        "finding": "contact types: key + label (no objectType)",
+        "file": "v2-0184-probe-organization-contact-types.json"
+    },
+    {
+        "case": "185",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/organization/notes",
+        "status": 200,
+        "finding": "organisation notes: one OrganizationNoteVO without fields (none set)",
+        "file": "v2-0185-probe-organization-notes.json"
+    },
+    {
+        "case": "186",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "POST",
+        "path": "/domain/1140/map.example.org/waf-rules",
+        "status": 403,
+        "finding": "probe WAF rule (disabled, only /__probe__/waf, log only) on the unused domain: HTTP 403, EMPTY body \u2014 although the user holds DomainWafRule CREATE; nothing was created (verified). Likely WAF not available for that domain; not retried",
+        "file": "v2-0186-waf-failed.json"
+    },
+    {
+        "case": "187",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/bind/example.org",
+        "status": 200,
+        "finding": "v1 zone of a domain: DomainBindVO (SOA fields, version = serial, records with type/value/ttl/active, cnameAlt); Myra's name servers dns.dnsN.de stay (public)",
+        "file": "v1-0187-probe-en-rapi-bind-example-org.json"
+    },
+    {
+        "case": "188",
+        "apiVersion": "v1",
+        "auth": "HMAC",
+        "method": "GET",
+        "path": "/en/rapi/bindRaw/example.org",
+        "status": 200,
+        "finding": "v1 BIND zone file: text/plain",
+        "file": "v1-0188-probe-en-rapi-bindraw-example-org.json"
+    },
+    {
+        "case": "189",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1140/bind/Myra",
+        "status": 200,
+        "finding": "v2 zone, ipTarget Myra: the same DomainBindVO as v1 (the SOA's primary name server rotates between calls)",
+        "file": "v2-0189-probe-domains-1140-bind-myra.json"
+    },
+    {
+        "case": "190",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1140/bind/Origin",
+        "status": 200,
+        "finding": "ipTarget Origin: for this zone the same records as Myra (what differs is not visible here)",
+        "file": "v2-0190-probe-domains-1140-bind-origin.json"
+    },
+    {
+        "case": "191",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1140/bind-raw/Myra",
+        "status": 200,
+        "finding": "v2 zone file, ipTarget Myra: text/plain",
+        "file": "v2-0191-probe-domains-1140-bind-raw-myra.json"
+    },
+    {
+        "case": "192",
+        "apiVersion": "v2",
+        "auth": "Bearer",
+        "method": "GET",
+        "path": "/domains/1140/bind-raw/Origin",
+        "status": 200,
+        "finding": "v2 zone file, ipTarget Origin",
+        "file": "v2-0192-probe-domains-1140-bind-raw-origin.json"
+    }
+]

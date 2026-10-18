@@ -1,0 +1,50 @@
+{
+    "case": "166",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/waf/conditions/matching-types",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": {
+                "default": {
+                    "REGEX": "REGEX",
+                    "IREGEX": "IREGEX",
+                    "NOT REGEX": "NOT REGEX",
+                    "NOT IREGEX": "NOT IREGEX",
+                    "EXACT": "EXACT",
+                    "PREFIX": "PREFIX",
+                    "SUFFIX": "SUFFIX",
+                    "NOT EXACT": "NOT EXACT",
+                    "NOT PREFIX": "NOT PREFIX",
+                    "NOT SUFFIX": "NOT SUFFIX"
+                },
+                "score": {
+                    "GREATER_THAN": "Greater",
+                    "LESS_THAN": "redacted-51",
+                    "EQUALS": "redacted-52"
+                },
+                "country": {
+                    "EQUALS": "redacted-52",
+                    "NOT_EQUALS": "redacted-53"
+                },
+                "continent": {
+                    "EQUALS": "redacted-52",
+                    "NOT_EQUALS": "redacted-53"
+                }
+            },
+            "page": 1,
+            "count": 4,
+            "pageSize": 50
+        }
+    },
+    "finding": "matching types by category (default, score, country, …): a map, not a list"
+}

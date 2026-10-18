@@ -1,0 +1,26 @@
+{
+    "case": "43",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/ip-filters/example.org",
+        "body": null
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The entity does not exist."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "a vHostName that is no vhost: 403 'The entity does not exist.'"
+}

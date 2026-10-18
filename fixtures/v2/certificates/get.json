@@ -1,0 +1,71 @@
+{
+    "case": "163",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/ssl/certificates/90001",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "SslCertVO",
+                    "subject": "redacted-1",
+                    "algorithm": "RSA-SHA256",
+                    "validFrom": "2026-10-15T20:07:06+0200",
+                    "validTo": "2027-01-13T20:07:05+0100",
+                    "fingerprint": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01",
+                    "serialNumber": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:02",
+                    "id": 90001,
+                    "modified": "2026-10-15T23:06:14+0200",
+                    "created": "2026-10-15T23:06:14+0200",
+                    "subjectAlternatives": [
+                        "example.com",
+                        "host1.live.host2.example.com",
+                        "www.example.com"
+                    ],
+                    "intermediates": [
+                        {
+                            "objectType": "SslIntermediateVO",
+                            "subject": "redacted-2",
+                            "algorithm": "RSA-SHA256",
+                            "validFrom": "2025-09-03T00:00:00+0200",
+                            "validTo": "2028-09-02T23:59:59+0200",
+                            "fingerprint": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:03",
+                            "serialNumber": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:04",
+                            "issuer": "redacted-3"
+                        },
+                        {
+                            "objectType": "SslIntermediateVO",
+                            "subject": "redacted-3",
+                            "algorithm": "RSA-SHA256",
+                            "validFrom": "2026-05-13T00:00:00+0200",
+                            "validTo": "2032-09-02T23:59:59+0200",
+                            "fingerprint": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:05",
+                            "serialNumber": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:06",
+                            "issuer": "redacted-4"
+                        }
+                    ],
+                    "wildcard": false,
+                    "extendedValidation": false,
+                    "subdomains": [
+                        "example.com",
+                        "www.example.com"
+                    ],
+                    "password": "",
+                    "managed": false,
+                    "multidomain": false,
+                    "sslConfigurationName": "redacted-5"
+                }
+            ]
+        }
+    },
+    "finding": "v2 get by id: one-element data"
+}

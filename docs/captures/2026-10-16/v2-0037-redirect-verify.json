@@ -1,0 +1,39 @@
+{
+    "case": "37",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1140/redirects/map.example.org",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRedirectVO",
+                    "source": "/",
+                    "destination": "https://map.example.com/",
+                    "type": "permanent",
+                    "subDomainName": "map.example.org",
+                    "matchingType": "prefix",
+                    "sort": 1,
+                    "id": 90002,
+                    "modified": "2022-08-31T15:54:24+0200",
+                    "created": "2022-08-31T15:54:24+0200",
+                    "comment": "redacted-1",
+                    "enabled": true
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "list after the delete: the probe is gone"
+}

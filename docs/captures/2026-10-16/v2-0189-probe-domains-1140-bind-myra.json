@@ -1,0 +1,78 @@
+{
+    "case": "189",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domains/1140/bind/Myra",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DomainBindVO",
+                    "domainName": "example.org",
+                    "ttl": 38400,
+                    "primaryDns": "dns.dns2.de",
+                    "hostmaster": "support.myrasecurity.com",
+                    "timeToRefresh": 16384,
+                    "timeToRetry": 2048,
+                    "timeToExpire": 1048576,
+                    "minimumTTL": 2560,
+                    "version": 2792168040,
+                    "records": [
+                        {
+                            "domain": "example.org",
+                            "type": "NS",
+                            "value": "dns.dns2.de",
+                            "rtype": "dns"
+                        },
+                        {
+                            "domain": "example.org",
+                            "type": "NS",
+                            "value": "dns.dns1.de",
+                            "rtype": "dns"
+                        },
+                        {
+                            "domain": "example.org",
+                            "type": "NS",
+                            "value": "dns.dns3.de",
+                            "rtype": "dns"
+                        },
+                        {
+                            "domain": "example.org",
+                            "type": "NS",
+                            "value": "dns.dns4.de",
+                            "rtype": "dns"
+                        },
+                        {
+                            "domain": "map.example.org",
+                            "ttl": 300,
+                            "type": "A",
+                            "value": "192.0.2.15",
+                            "cnameAlt": "host1.ax4z.com.",
+                            "rtype": "record",
+                            "active": true
+                        },
+                        {
+                            "domain": "map.example.org",
+                            "ttl": 300,
+                            "type": "AAAA",
+                            "value": "2001:db8::d",
+                            "cnameAlt": "host1.ax4z.com.",
+                            "rtype": "record",
+                            "active": true
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "finding": "v2 zone, ipTarget Myra: the same DomainBindVO as v1 (the SOA's primary name server rotates between calls)"
+}

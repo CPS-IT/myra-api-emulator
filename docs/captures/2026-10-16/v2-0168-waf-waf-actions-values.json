@@ -1,0 +1,65 @@
+{
+    "case": "168",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/waf/actions/values",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": {
+                "customKey": {
+                    "score": {
+                        "+": "redacted-63",
+                        "-": "redacted-64",
+                        "*": "redacted-65"
+                    },
+                    "set_http_status": {
+                        "301": "301",
+                        "302": "302",
+                        "404": "404"
+                    },
+                    "origin_rate_limit": {
+                        "1": "redacted-66",
+                        "2": "redacted-67",
+                        "5": "redacted-68",
+                        "10": "redacted-69",
+                        "15": "redacted-70",
+                        "30": "redacted-71",
+                        "45": "redacted-72",
+                        "60": "redacted-73",
+                        "120": "redacted-74",
+                        "180": "redacted-75",
+                        "300": "redacted-76",
+                        "600": "redacted-77",
+                        "1200": "redacted-78",
+                        "3600": "redacted-79",
+                        "10800": "redacted-80",
+                        "21600": "redacted-81",
+                        "43200": "redacted-82",
+                        "64800": "redacted-83",
+                        "86400": "redacted-84"
+                    }
+                },
+                "requiresValue": {
+                    "set_http_status": {
+                        "301": true,
+                        "302": true,
+                        "404": false
+                    }
+                }
+            },
+            "page": 1,
+            "count": 2,
+            "pageSize": 50
+        }
+    },
+    "finding": "allowed values per action type: {customKey: type → value → label, requiresValue: type → value → bool}"
+}

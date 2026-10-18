@@ -1,0 +1,35 @@
+{
+    "case": "109",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1140/maintenance-templates/90004",
+        "body": {
+            "id": 90004,
+            "modified": "2026-10-16T16:44:08+0200",
+            "name": "__probe__",
+            "content": "redacted-2"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "MaintenanceTemplateVO",
+                    "id": 90004,
+                    "modified": "2026-10-16T16:44:09+0200",
+                    "created": "2026-10-16T16:44:08+0200",
+                    "name": "__probe__",
+                    "content": "redacted-2"
+                }
+            ]
+        }
+    },
+    "finding": "template update with id + modified"
+}

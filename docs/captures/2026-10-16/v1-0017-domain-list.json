@@ -1,0 +1,89 @@
+{
+    "case": "17",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/domains/1",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 2,
+            "pageSize": 50,
+            "list": [
+                {
+                    "objectType": "DomainVO",
+                    "name": "example.com",
+                    "organizationId": 1133,
+                    "autoUpdate": true,
+                    "maintenance": false,
+                    "dnsRecords": [],
+                    "reversed": false,
+                    "environment": "live",
+                    "locked": false,
+                    "verified": true,
+                    "permissions": {
+                        "SubDomains": true,
+                        "Maintenance": true,
+                        "cache_clear": true,
+                        "edit": true,
+                        "SslCert": true,
+                        "SslCertRequest": true,
+                        "ErrorPage": true,
+                        "LoadBalance": true,
+                        "DnsRecord": true,
+                        "WaitingRoom": true,
+                        "MaintenanceTemplates": {
+                            "read": true,
+                            "create": true
+                        }
+                    },
+                    "id": 1000,
+                    "modified": "2018-07-03T16:08:42+0200",
+                    "created": "2018-07-03T10:59:05+0200",
+                    "label": "example.com"
+                },
+                {
+                    "objectType": "DomainVO",
+                    "name": "example.org",
+                    "organizationId": 1133,
+                    "autoUpdate": true,
+                    "maintenance": false,
+                    "dnsRecords": [],
+                    "reversed": false,
+                    "environment": "live",
+                    "locked": false,
+                    "verified": true,
+                    "permissions": {
+                        "SubDomains": true,
+                        "Maintenance": true,
+                        "cache_clear": true,
+                        "edit": true,
+                        "SslCert": true,
+                        "SslCertRequest": true,
+                        "ErrorPage": true,
+                        "LoadBalance": true,
+                        "DnsRecord": true,
+                        "WaitingRoom": true,
+                        "MaintenanceTemplates": {
+                            "read": true,
+                            "create": true
+                        }
+                    },
+                    "id": 1140,
+                    "modified": "2018-07-03T16:08:39+0200",
+                    "created": "2018-07-03T11:09:06+0200",
+                    "label": "example.org"
+                }
+            ]
+        }
+    },
+    "finding": "domain list v1: the same DomainVO objects as v2 (identical field by field, same ids); no paused/pausedUntil although the manual shows them"
+}

@@ -1,0 +1,24 @@
+{
+    "case": "18",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/domains/2",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 2,
+            "count": 2,
+            "pageSize": 50,
+            "list": []
+        }
+    },
+    "finding": "paging v1: page in the path, echoed as page: 2; past the last page list is empty; count = total"
+}

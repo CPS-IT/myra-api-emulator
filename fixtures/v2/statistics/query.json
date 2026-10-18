@@ -1,0 +1,246 @@
+{
+    "case": "134",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistic/query",
+        "body": {
+            "query": {
+                "aggregationInterval": "hour",
+                "dataSources": {
+                    "requests": {
+                        "source": "requests",
+                        "type": "stats"
+                    },
+                    "requests_histogram": {
+                        "source": "requests",
+                        "type": "histogram"
+                    },
+                    "response_codes": {
+                        "source": "response_codes",
+                        "type": "stats"
+                    }
+                },
+                "startDate": "2026-10-15T10:00:00+02:00",
+                "endDate": "2026-10-15T11:59:59+02:00",
+                "fqdn": [
+                    "ALL:example.com"
+                ],
+                "type": "fqdn"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "objectType": "StatisticVO",
+            "query": {
+                "objectType": "StatisticQueryVO",
+                "startDate": "2026-10-15T10:00:00+0200",
+                "endDate": "2026-10-15T11:59:59+0200",
+                "fqdn": [
+                    "ALL:example.com"
+                ],
+                "dataSources": {
+                    "requests": {
+                        "source": "requests",
+                        "type": "stats"
+                    },
+                    "requests_histogram": {
+                        "source": "requests",
+                        "type": "histogram"
+                    },
+                    "response_codes": {
+                        "source": "response_codes",
+                        "type": "stats"
+                    }
+                },
+                "aggregationInterval": "hour",
+                "type": "fqdn"
+            },
+            "result": {
+                "requests": {
+                    "min": 1067,
+                    "max": 1068,
+                    "sum": 1069,
+                    "avg": 70.5
+                },
+                "response_codes": {
+                    "206": {
+                        "min": 1071,
+                        "max": 1072,
+                        "sum": 1073,
+                        "avg": 74.5
+                    },
+                    "300": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "303": {
+                        "min": 1075,
+                        "max": 1076,
+                        "sum": 1077,
+                        "avg": 78.5
+                    },
+                    "401": {
+                        "min": 1079,
+                        "max": 1080,
+                        "sum": 1081,
+                        "avg": 82.5
+                    },
+                    "307": {
+                        "min": 1083,
+                        "max": 1084,
+                        "sum": 1085,
+                        "avg": 86.5
+                    },
+                    "403": {
+                        "min": 1087,
+                        "max": 1088,
+                        "sum": 1089,
+                        "avg": 90.5
+                    },
+                    "308": {
+                        "min": 1091,
+                        "max": 1092,
+                        "sum": 1093,
+                        "avg": 1094
+                    },
+                    "404": {
+                        "min": 1095,
+                        "max": 1096,
+                        "sum": 1097,
+                        "avg": 98.5
+                    },
+                    "405": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "200": {
+                        "min": 1099,
+                        "max": 1100,
+                        "sum": 1101,
+                        "avg": 102.5
+                    },
+                    "406": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "500": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "408": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "502": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "422": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "504": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "201": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "301": {
+                        "min": 1103,
+                        "max": 1104,
+                        "sum": 1105,
+                        "avg": 106.5
+                    },
+                    "202": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "302": {
+                        "min": 1107,
+                        "max": 1108,
+                        "sum": 1109,
+                        "avg": 1110
+                    },
+                    "204": {
+                        "min": 1111,
+                        "max": 1112,
+                        "sum": 1113,
+                        "avg": 114.5
+                    },
+                    "304": {
+                        "min": 1115,
+                        "max": 1116,
+                        "sum": 1117,
+                        "avg": 118.5
+                    },
+                    "400": {
+                        "min": 1119,
+                        "max": 1120,
+                        "sum": 1121,
+                        "avg": 1122
+                    },
+                    "Other": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "429": {
+                        "min": 0,
+                        "max": 0,
+                        "sum": 0,
+                        "avg": 0
+                    },
+                    "503": {
+                        "min": 1123,
+                        "max": 1124,
+                        "sum": 1125,
+                        "avg": 126.5
+                    },
+                    "499": {
+                        "min": 1127,
+                        "max": 1128,
+                        "sum": 1129,
+                        "avg": 130.5
+                    }
+                },
+                "requests_histogram": {
+                    "1792051200000": {
+                        "value": 1131
+                    },
+                    "1792054800000": {
+                        "value": 1132
+                    }
+                }
+            }
+        }
+    },
+    "finding": "v2: the same request, the same StatisticVO as v1 (no envelope)"
+}

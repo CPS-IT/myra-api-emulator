@@ -1,0 +1,47 @@
+{
+    "case": "149",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/subdomains?search=www",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "label": "www.example.com",
+                    "value": "www.example.com.",
+                    "name": "www.example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1049,
+                    "monitored": false,
+                    "modified": "2024-06-26T15:34:09+0200",
+                    "monitoredId": 90001,
+                    "certId": 90002,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "?search= matches parts of the name"
+}

@@ -1,0 +1,47 @@
+{
+    "case": "150",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/subdomains?search=example.com&filterType=exact",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "label": "example.com",
+                    "value": "example.com.",
+                    "name": "example.com.",
+                    "access": true,
+                    "domainName": "example.com",
+                    "domainId": 1000,
+                    "paused": false,
+                    "id": 1007,
+                    "monitored": true,
+                    "modified": "2022-08-31T14:00:57+0200",
+                    "monitoredId": 90003,
+                    "certId": 90002,
+                    "isActive": true,
+                    "permissions": {
+                        "edit": true
+                    },
+                    "subdomainSubObjects": {
+                        "maintenancePages": false,
+                        "botSettings": false
+                    }
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "?search=…&filterType=exact: only that name"
+}

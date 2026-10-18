@@ -1,0 +1,28 @@
+{
+    "case": "156",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domains/1000/verification",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "verified": true,
+                    "recordNames": [],
+                    "conflictingNames": [],
+                    "foreignDescendantsExist": false
+                }
+            ]
+        }
+    },
+    "finding": "verification status: verified, recordNames, conflictingNames, foreignDescendantsExist"
+}

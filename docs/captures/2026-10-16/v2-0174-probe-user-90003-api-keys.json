@@ -1,0 +1,52 @@
+{
+    "case": "174",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/user/90003/api-keys",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "ApiKeyVO",
+                    "key": "redacted-16",
+                    "name": "redacted-17",
+                    "id": 90009,
+                    "modified": "2024-04-29T10:41:11+0200",
+                    "created": "2024-04-29T10:41:11+0200",
+                    "deleted": false
+                },
+                {
+                    "objectType": "ApiKeyVO",
+                    "key": "redacted-18",
+                    "name": "redacted-19",
+                    "id": 90010,
+                    "modified": "2025-02-19T17:22:57+0100",
+                    "created": "2025-02-19T17:22:57+0100",
+                    "deleted": false
+                },
+                {
+                    "objectType": "ApiKeyVO",
+                    "key": "redacted-20",
+                    "name": "redacted-21",
+                    "id": 90011,
+                    "modified": "2026-10-16T11:05:21+0200",
+                    "created": "2026-10-16T11:05:21+0200",
+                    "deleted": false
+                }
+            ],
+            "page": 1,
+            "count": 3,
+            "pageSize": 50
+        }
+    },
+    "finding": "the API keys of a user: ApiKeyVO with the public key only (no secret); key and name redacted"
+}

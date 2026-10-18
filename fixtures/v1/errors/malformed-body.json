@@ -1,0 +1,26 @@
+{
+    "case": "6.1",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "body": "\"fqdn\":\"no-such-host.invalid\"  (not valid JSON on purpose)"
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "Invalid data format."
+                }
+            ],
+            "warningList": [],
+            "targetObject": []
+        }
+    },
+    "finding": "malformed body"
+}

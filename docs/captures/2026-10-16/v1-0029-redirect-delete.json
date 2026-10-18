@@ -1,0 +1,28 @@
+{
+    "case": "29",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "DELETE",
+        "path": "/en/rapi/redirects/map.example.org",
+        "body": {
+            "id": 90001,
+            "modified": "2026-10-16T16:04:24+0200"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "body": {
+            "error": false,
+            "targetObject": [
+                {
+                    "id": 90001,
+                    "modified": "2026-10-16T16:04:24+0200"
+                }
+            ],
+            "violationList": []
+        }
+    },
+    "finding": "v1 delete: body {id, modified}; JSON answer although Content-Type is text/html"
+}

@@ -1,0 +1,35 @@
+{
+    "case": "13.2",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1000/cache-clear",
+        "body": {
+            "fqdn": "no-such-host.invalid",
+            "resource": "/__probe__/nothing.txt",
+            "recursive": false
+        }
+    },
+    "response": {
+        "status": 403,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "fqdn",
+                    "message": "The given domain does not exist.",
+                    "code": "DOMAIN_DOES_NOT_EXIST",
+                    "translations": {
+                        "en": "The given domain does not exist.",
+                        "de": "Die angegebene Domain wurde nicht gefunden."
+                    }
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "fqdn not in the domain: violation with code"
+}

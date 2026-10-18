@@ -1,0 +1,31 @@
+{
+    "case": "117",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/errorpages/90400",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "ErrorPageVO",
+                    "subDomainName": "example.com",
+                    "errorCode": 502,
+                    "content": "redacted-642",
+                    "id": 90400,
+                    "modified": "2026-06-08T16:59:38+0200",
+                    "created": "2026-06-08T16:59:38+0200"
+                }
+            ]
+        }
+    },
+    "finding": "get by id: with content"
+}

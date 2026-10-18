@@ -1,0 +1,37 @@
+{
+    "case": "34",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1140/redirects/map.example.org/90003",
+        "body": {
+            "subDomainName": "map.example.org",
+            "source": "/__probe__/redirect",
+            "destination": "https://map.example.org/__probe__/stale",
+            "type": "redirect",
+            "matchingType": "exact",
+            "sort": 0,
+            "enabled": false,
+            "expertMode": false,
+            "id": 90003,
+            "modified": "2026-10-16T16:04:28+0200"
+        }
+    },
+    "response": {
+        "status": 400,
+        "contentType": "application/json",
+        "body": {
+            "error": true,
+            "violationList": [
+                {
+                    "propertyPath": "",
+                    "message": "The record has been edited in the meantime."
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "optimistic lock: a stale modified is rejected with HTTP 400 and error: true"
+}

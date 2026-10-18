@@ -1,0 +1,33 @@
+{
+    "case": "2",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "PUT",
+        "path": "/en/rapi/cacheClear/example.com",
+        "body": {
+            "fqdn": "example.com",
+            "resource": "/__probe__/nothing.txt",
+            "recursive": false
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "targetObject": [
+                {
+                    "objectType": "CacheClearVO",
+                    "fqdn": "example.com",
+                    "resource": "/__probe__/nothing.txt",
+                    "recursive": false,
+                    "bulk": []
+                }
+            ]
+        }
+    },
+    "finding": "cache clear, single resource"
+}

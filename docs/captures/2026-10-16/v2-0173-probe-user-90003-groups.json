@@ -1,0 +1,39 @@
+{
+    "case": "173",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/user/90003/groups",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "GroupVO",
+                    "name": "redacted-4",
+                    "children": [],
+                    "roles": [
+                        "ADMINISTRATOR"
+                    ],
+                    "membersCount": 5,
+                    "type": "USER",
+                    "organizationId": 1133,
+                    "id": 90001,
+                    "modified": "2021-08-26T10:14:52+0200",
+                    "created": "2021-08-26T10:14:52+0200"
+                }
+            ],
+            "page": 1,
+            "count": 1,
+            "pageSize": 50
+        }
+    },
+    "finding": "the groups of a user: GroupVO (roles, membersCount, type)"
+}

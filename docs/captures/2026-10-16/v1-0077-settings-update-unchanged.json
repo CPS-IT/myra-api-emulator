@@ -1,0 +1,23 @@
+{
+    "case": "77",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "POST",
+        "path": "/en/rapi/subdomainSetting/map.example.org",
+        "body": {}
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "targetObject": [
+                []
+            ]
+        }
+    },
+    "finding": "update with the unchanged own settings ({}): accepted, answer echoes them in targetObject"
+}

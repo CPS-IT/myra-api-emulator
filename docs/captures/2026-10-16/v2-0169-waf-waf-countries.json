@@ -1,0 +1,2025 @@
+{
+    "case": "169",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/waf/countries",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "AD",
+                    "country": "redacted-85",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90038
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-88",
+                    "country": "redacted-89",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90039
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-92",
+                    "country": "redacted-93",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90040
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-94",
+                    "country": "redacted-95",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90041
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "AI",
+                    "country": "redacted-98",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90042
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-99",
+                    "country": "redacted-100",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90043
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-101",
+                    "country": "redacted-102",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90044
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-103",
+                    "country": "redacted-104",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90045
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-106",
+                    "country": "redacted-107",
+                    "continentCode": "redacted-108",
+                    "continent": "redacted-107",
+                    "id": 90046
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-109",
+                    "country": "redacted-110",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90047
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-90",
+                    "country": "redacted-113",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90048
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-116",
+                    "country": "redacted-117",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90049
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-118",
+                    "country": "redacted-119",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90050
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-120",
+                    "country": "redacted-121",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90051
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-122",
+                    "country": "redacted-123",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90052
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-124",
+                    "country": "redacted-125",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90053
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-126",
+                    "country": "redacted-127",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90001
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-128",
+                    "country": "redacted-129",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90002
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-130",
+                    "country": "redacted-131",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90003
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-132",
+                    "country": "redacted-133",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90004
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-134",
+                    "country": "redacted-135",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90005
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-136",
+                    "country": "redacted-137",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90006
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-138",
+                    "country": "redacted-139",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90007
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-140",
+                    "country": "redacted-141",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90008
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-142",
+                    "country": "redacted-143",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90009
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-144",
+                    "country": "redacted-145",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90010
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-146",
+                    "country": "redacted-147",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90011
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-148",
+                    "country": "redacted-149",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90012
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-150",
+                    "country": "redacted-151",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90013
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-152",
+                    "country": "redacted-153",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90014
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-154",
+                    "country": "redacted-155",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90015
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-156",
+                    "country": "redacted-157",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90016
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-158",
+                    "country": "redacted-159",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90017
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-160",
+                    "country": "redacted-161",
+                    "continentCode": "redacted-108",
+                    "continent": "redacted-107",
+                    "id": 90018
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-162",
+                    "country": "redacted-163",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90019
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-164",
+                    "country": "redacted-165",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90020
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-166",
+                    "country": "redacted-167",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90054
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "CA",
+                    "country": "redacted-168",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90021
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-169",
+                    "country": "redacted-170",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90022
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-171",
+                    "country": "redacted-172",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90023
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-173",
+                    "country": "redacted-174",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90024
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-175",
+                    "country": "redacted-176",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90025
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-177",
+                    "country": "redacted-178",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90026
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-179",
+                    "country": "redacted-180",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90027
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-181",
+                    "country": "redacted-182",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90055
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-183",
+                    "country": "redacted-184",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90028
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-185",
+                    "country": "redacted-186",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90029
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "CN",
+                    "country": "redacted-187",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90030
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "CO",
+                    "country": "redacted-188",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90031
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-189",
+                    "country": "redacted-190",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90032
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-191",
+                    "country": "redacted-192",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90056
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-193",
+                    "country": "redacted-194",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90057
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-195",
+                    "country": "redacted-196",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90058
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-197",
+                    "country": "redacted-198",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90059
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-199",
+                    "country": "redacted-200",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90060
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-201",
+                    "country": "redacted-202",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90061
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "DE",
+                    "country": "redacted-203",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90062
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-204",
+                    "country": "redacted-205",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90063
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-206",
+                    "country": "redacted-207",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90064
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-208",
+                    "country": "redacted-209",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90065
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-210",
+                    "country": "redacted-211",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90066
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-212",
+                    "country": "redacted-213",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90067
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "EC",
+                    "country": "redacted-214",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90068
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "EE",
+                    "country": "redacted-215",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90069
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-216",
+                    "country": "redacted-217",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90070
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-218",
+                    "country": "redacted-219",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90071
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-220",
+                    "country": "redacted-221",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90072
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-222",
+                    "country": "redacted-223",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90073
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-224",
+                    "country": "redacted-225",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90074
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-226",
+                    "country": "redacted-227",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90075
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-228",
+                    "country": "redacted-229",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90076
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-230",
+                    "country": "redacted-231",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90077
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-232",
+                    "country": "redacted-233",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90078
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-234",
+                    "country": "redacted-235",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90079
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-236",
+                    "country": "redacted-237",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90080
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-238",
+                    "country": "redacted-239",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90081
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "GB",
+                    "country": "redacted-240",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90082
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-241",
+                    "country": "redacted-242",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90083
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-243",
+                    "country": "redacted-244",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90084
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-245",
+                    "country": "redacted-246",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90085
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-247",
+                    "country": "redacted-248",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90086
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-249",
+                    "country": "redacted-250",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90087
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-251",
+                    "country": "redacted-252",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90088
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-253",
+                    "country": "redacted-254",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90089
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-255",
+                    "country": "redacted-256",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90090
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-257",
+                    "country": "redacted-258",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90091
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-259",
+                    "country": "redacted-260",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90092
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-261",
+                    "country": "redacted-262",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90093
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-263",
+                    "country": "redacted-264",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90094
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-265",
+                    "country": "redacted-266",
+                    "continentCode": "redacted-108",
+                    "continent": "redacted-107",
+                    "id": 90095
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-267",
+                    "country": "redacted-268",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90096
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-269",
+                    "country": "redacted-270",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90097
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-271",
+                    "country": "redacted-272",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90098
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-273",
+                    "country": "redacted-274",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90099
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-275",
+                    "country": "redacted-276",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90100
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-277",
+                    "country": "redacted-278",
+                    "continentCode": "redacted-108",
+                    "continent": "redacted-107",
+                    "id": 90101
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-279",
+                    "country": "redacted-280",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90102
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-281",
+                    "country": "redacted-282",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90103
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-283",
+                    "country": "redacted-284",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90104
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-285",
+                    "country": "redacted-286",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90105
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "ID",
+                    "country": "redacted-287",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90106
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-288",
+                    "country": "redacted-289",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90107
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-290",
+                    "country": "redacted-291",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90108
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-292",
+                    "country": "redacted-293",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90109
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "IN",
+                    "country": "redacted-294",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90110
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-295",
+                    "country": "redacted-296",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90111
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-297",
+                    "country": "redacted-298",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90112
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-299",
+                    "country": "redacted-300",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90113
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-301",
+                    "country": "redacted-302",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90114
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "IT",
+                    "country": "redacted-303",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90115
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-304",
+                    "country": "redacted-305",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90116
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-306",
+                    "country": "redacted-307",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90117
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-308",
+                    "country": "redacted-309",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90118
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-310",
+                    "country": "redacted-311",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90119
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-312",
+                    "country": "redacted-313",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90120
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-314",
+                    "country": "redacted-315",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90121
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-316",
+                    "country": "redacted-317",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90122
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-318",
+                    "country": "redacted-319",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90123
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-320",
+                    "country": "redacted-321",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90124
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-322",
+                    "country": "redacted-323",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90125
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-324",
+                    "country": "redacted-325",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90126
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-326",
+                    "country": "redacted-327",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90127
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-328",
+                    "country": "redacted-329",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90128
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-330",
+                    "country": "redacted-331",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90129
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-332",
+                    "country": "redacted-333",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90130
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-334",
+                    "country": "redacted-335",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90131
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-336",
+                    "country": "redacted-337",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90132
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-338",
+                    "country": "redacted-339",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90133
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-340",
+                    "country": "redacted-341",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90134
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-342",
+                    "country": "redacted-343",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90135
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-344",
+                    "country": "redacted-345",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90136
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-346",
+                    "country": "redacted-347",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90137
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-348",
+                    "country": "redacted-349",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90138
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-350",
+                    "country": "redacted-351",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90139
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-352",
+                    "country": "redacted-353",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90140
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-354",
+                    "country": "redacted-355",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90141
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-356",
+                    "country": "redacted-357",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90142
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-358",
+                    "country": "redacted-359",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90143
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-360",
+                    "country": "redacted-361",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90144
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-362",
+                    "country": "redacted-363",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90145
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-364",
+                    "country": "redacted-365",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90146
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-366",
+                    "country": "redacted-367",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90147
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-368",
+                    "country": "redacted-369",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90148
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-370",
+                    "country": "redacted-371",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90149
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-372",
+                    "country": "redacted-373",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90150
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-374",
+                    "country": "redacted-375",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90151
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-376",
+                    "country": "redacted-377",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90152
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-378",
+                    "country": "redacted-379",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90153
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-380",
+                    "country": "redacted-381",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90154
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-382",
+                    "country": "redacted-383",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90155
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-384",
+                    "country": "redacted-385",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90156
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-386",
+                    "country": "redacted-387",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90157
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-388",
+                    "country": "redacted-389",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90158
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-390",
+                    "country": "redacted-391",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90159
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-392",
+                    "country": "redacted-393",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90160
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-394",
+                    "country": "redacted-395",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90161
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "MX",
+                    "country": "redacted-396",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90162
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-397",
+                    "country": "redacted-398",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90163
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-399",
+                    "country": "redacted-400",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90164
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-96",
+                    "country": "redacted-401",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90165
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-402",
+                    "country": "redacted-403",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90166
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-404",
+                    "country": "redacted-405",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90167
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-406",
+                    "country": "redacted-407",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90168
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-408",
+                    "country": "redacted-409",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90169
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-410",
+                    "country": "redacted-411",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90170
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-412",
+                    "country": "redacted-413",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90171
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-414",
+                    "country": "redacted-415",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90172
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-416",
+                    "country": "redacted-417",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90173
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-418",
+                    "country": "redacted-419",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90174
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-420",
+                    "country": "redacted-421",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90175
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-422",
+                    "country": "redacted-423",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90176
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-424",
+                    "country": "redacted-425",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90177
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-426",
+                    "country": "redacted-427",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90178
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-428",
+                    "country": "redacted-429",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90179
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-430",
+                    "country": "redacted-431",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90180
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-432",
+                    "country": "redacted-433",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90181
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-434",
+                    "country": "redacted-435",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90182
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-436",
+                    "country": "redacted-437",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90183
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-438",
+                    "country": "redacted-439",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90184
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-440",
+                    "country": "redacted-441",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90185
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-442",
+                    "country": "redacted-443",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90186
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-444",
+                    "country": "redacted-445",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90187
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-446",
+                    "country": "redacted-447",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90188
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-448",
+                    "country": "redacted-449",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90189
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-450",
+                    "country": "redacted-451",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90190
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-452",
+                    "country": "redacted-453",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90191
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-454",
+                    "country": "redacted-455",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90192
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-456",
+                    "country": "redacted-457",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90193
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-458",
+                    "country": "redacted-459",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90194
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-460",
+                    "country": "redacted-461",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90195
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-462",
+                    "country": "redacted-463",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90196
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-464",
+                    "country": "redacted-465",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90197
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-111",
+                    "country": "redacted-466",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90198
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-467",
+                    "country": "redacted-468",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90199
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-469",
+                    "country": "redacted-470",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90200
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-471",
+                    "country": "redacted-472",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90201
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "SE",
+                    "country": "redacted-473",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90202
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-474",
+                    "country": "redacted-475",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90203
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-476",
+                    "country": "redacted-477",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90204
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-478",
+                    "country": "redacted-479",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90205
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-480",
+                    "country": "redacted-481",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90206
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-482",
+                    "country": "redacted-483",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90207
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-484",
+                    "country": "redacted-485",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90208
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-486",
+                    "country": "redacted-487",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90209
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-488",
+                    "country": "redacted-489",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90210
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-490",
+                    "country": "redacted-491",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90211
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-492",
+                    "country": "redacted-493",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90212
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-494",
+                    "country": "redacted-495",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90213
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "ST",
+                    "country": "redacted-496",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90214
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-497",
+                    "country": "redacted-498",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90215
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-499",
+                    "country": "redacted-500",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90216
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-501",
+                    "country": "redacted-502",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90217
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-503",
+                    "country": "redacted-504",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90218
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-505",
+                    "country": "redacted-506",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90219
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-507",
+                    "country": "redacted-508",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90220
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-509",
+                    "country": "redacted-510",
+                    "continentCode": "redacted-108",
+                    "continent": "redacted-107",
+                    "id": 90221
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-511",
+                    "country": "redacted-512",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90222
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-513",
+                    "country": "redacted-514",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90223
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-515",
+                    "country": "redacted-516",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90224
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-517",
+                    "country": "redacted-518",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90225
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-519",
+                    "country": "redacted-520",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90226
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-521",
+                    "country": "redacted-522",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90227
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-523",
+                    "country": "redacted-524",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90228
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-525",
+                    "country": "redacted-526",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90229
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-527",
+                    "country": "redacted-528",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90230
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-529",
+                    "country": "redacted-530",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90231
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-531",
+                    "country": "redacted-532",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90232
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-533",
+                    "country": "redacted-534",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90233
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-535",
+                    "country": "redacted-536",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90234
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-537",
+                    "country": "redacted-538",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90235
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-539",
+                    "country": "redacted-540",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90236
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-541",
+                    "country": "redacted-542",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90237
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "US",
+                    "country": "redacted-543",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90238
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-544",
+                    "country": "redacted-545",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90239
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-546",
+                    "country": "redacted-547",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90240
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-548",
+                    "country": "redacted-549",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90241
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-550",
+                    "country": "redacted-551",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90242
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-552",
+                    "country": "redacted-553",
+                    "continentCode": "redacted-111",
+                    "continent": "redacted-112",
+                    "id": 90243
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-554",
+                    "country": "redacted-555",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90244
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-556",
+                    "country": "redacted-557",
+                    "continentCode": "redacted-96",
+                    "continent": "redacted-97",
+                    "id": 90245
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-558",
+                    "country": "redacted-559",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90246
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-560",
+                    "country": "redacted-561",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90247
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-562",
+                    "country": "redacted-563",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90248
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-564",
+                    "country": "redacted-565",
+                    "continentCode": "redacted-114",
+                    "continent": "redacted-115",
+                    "id": 90249
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-566",
+                    "country": "redacted-567",
+                    "continentCode": "redacted-86",
+                    "continent": "redacted-87",
+                    "id": 90250
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-568",
+                    "country": "redacted-569",
+                    "continentCode": "redacted-90",
+                    "continent": "redacted-91",
+                    "id": 90251
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-570",
+                    "country": "redacted-571",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90252
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-572",
+                    "country": "redacted-573",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90253
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-574",
+                    "country": "redacted-575",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90254
+                },
+                {
+                    "objectType": "CountryVO",
+                    "countryCode": "redacted-576",
+                    "country": "redacted-577",
+                    "continentCode": "redacted-92",
+                    "continent": "redacted-105",
+                    "id": 90255
+                }
+            ],
+            "page": 1,
+            "count": 250,
+            "pageSize": 50
+        }
+    },
+    "finding": "250 countries in ONE answer although pageSize says 50 (unpaged like the account's subdomains); names redacted"
+}

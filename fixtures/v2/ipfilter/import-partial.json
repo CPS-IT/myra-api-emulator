@@ -1,0 +1,27 @@
+{
+    "case": "51",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/domain/1140/ip-filters/map.example.org/import?type=BLACKLIST",
+        "contentType": "text/csv",
+        "body": "192.0.2.2/32,2099-12-31T23:59:59+0100,__probe__\nnot-an-ip,,__probe__\n"
+    },
+    "response": {
+        "status": 201,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [
+                {
+                    "propertyPath": "value",
+                    "message": "Please enter a valid IP-Range"
+                }
+            ],
+            "warningList": [],
+            "data": []
+        }
+    },
+    "finding": "import with one invalid line: HTTP 201 and error: false (the spec says true), the line as violation"
+}

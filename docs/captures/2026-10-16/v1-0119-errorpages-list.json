@@ -1,0 +1,41 @@
+{
+    "case": "119",
+    "apiVersion": "v1",
+    "auth": "HMAC",
+    "request": {
+        "method": "GET",
+        "path": "/en/rapi/errorpages/example.org/1",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "page": 1,
+            "count": 1,
+            "pageSize": 10,
+            "list": [
+                {
+                    "subDomainName": "map.example.org",
+                    "error": {
+                        "413": {
+                            "objectType": "ErrorPageVO",
+                            "errorCode": 413,
+                            "content": "",
+                            "permissions": {
+                                "edit": true
+                            },
+                            "id": 90001,
+                            "modified": "2026-10-16T17:03:10+0200",
+                            "created": "2026-10-16T17:03:10+0200"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "finding": "the vhost's list with the probe page"
+}

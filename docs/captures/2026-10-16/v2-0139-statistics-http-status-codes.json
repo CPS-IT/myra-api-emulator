@@ -1,0 +1,34 @@
+{
+    "case": "139",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "POST",
+        "path": "/statistics/http-status-codes/1792051200/1792058399",
+        "body": {
+            "domains": [
+                "example.org"
+            ],
+            "subDomains": []
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": [
+            {
+                "status_code": 101,
+                "value": 0
+            },
+            {
+                "status_code": 200,
+                "value": 0
+            },
+            {
+                "status_code": 201,
+                "value": 0
+            }
+        ]
+    },
+    "finding": "a quiet domain: the same 37 codes, value 0"
+}

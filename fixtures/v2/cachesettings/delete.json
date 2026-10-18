@@ -1,0 +1,16 @@
+{
+    "case": "68",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "DELETE",
+        "path": "/domain/1140/map.example.org/cache-settings/90002",
+        "body": null
+    },
+    "response": {
+        "status": 204,
+        "contentType": null,
+        "body": ""
+    },
+    "finding": "v2 delete: HTTP 204, empty"
+}

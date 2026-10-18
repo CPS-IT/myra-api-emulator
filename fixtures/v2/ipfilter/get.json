@@ -1,0 +1,33 @@
+{
+    "case": "41",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domain/1000/ip-filters/example.com/90393",
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "IpFilterVO",
+                    "value": "192.0.2.123/32",
+                    "type": "WHITELIST",
+                    "subDomainName": "example.com",
+                    "id": 90393,
+                    "modified": "2018-07-11T13:57:24+0200",
+                    "created": "2018-07-11T13:57:24+0200",
+                    "comment": "redacted-628",
+                    "enabled": true
+                }
+            ]
+        }
+    },
+    "finding": "get by id: one-element data list"
+}

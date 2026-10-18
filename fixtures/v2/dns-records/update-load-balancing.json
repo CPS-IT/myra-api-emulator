@@ -1,0 +1,81 @@
+{
+    "case": "95",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "PUT",
+        "path": "/domain/1140/dns-records/90011",
+        "body": {
+            "name": "myra-web-api-probe.example.org",
+            "value": "192.0.2.1",
+            "priority": 0,
+            "ttl": 300,
+            "vhostId": 90003,
+            "recordType": "A",
+            "active": false,
+            "paused": false,
+            "upstreamOptions": {
+                "weight": 2,
+                "maxFails": 100,
+                "failTimeout": "1",
+                "backup": false,
+                "down": false,
+                "id": 90010,
+                "modified": "2026-10-16T16:37:08+0200"
+            },
+            "alternativeCname": "host2.ax4z.com.",
+            "alternativeCnameDnsSec": "host2.ax4z-s.com.",
+            "caaFlags": 0,
+            "endpoints": [],
+            "serviceType": 1,
+            "id": 90011,
+            "modified": "2026-10-16T16:37:08+0200",
+            "enabled": true,
+            "comment": "__probe__"
+        }
+    },
+    "response": {
+        "status": 200,
+        "contentType": "application/json",
+        "body": {
+            "error": false,
+            "violationList": [],
+            "warningList": [],
+            "data": [
+                {
+                    "objectType": "DnsRecordVO",
+                    "name": "myra-web-api-probe.example.org",
+                    "value": "192.0.2.1",
+                    "priority": 0,
+                    "ttl": 300,
+                    "vhostId": 90003,
+                    "recordType": "A",
+                    "active": false,
+                    "paused": false,
+                    "upstreamOptions": {
+                        "objectType": "UpstreamOptionsVO",
+                        "weight": 2,
+                        "maxFails": 100,
+                        "failTimeout": "1",
+                        "backup": false,
+                        "down": false,
+                        "id": 90010,
+                        "modified": "2026-10-16T16:37:09+0200",
+                        "created": "2026-10-16T16:37:08+0200"
+                    },
+                    "alternativeCname": "host2.ax4z.com.",
+                    "alternativeCnameDnsSec": "host2.ax4z-s.com.",
+                    "caaFlags": 0,
+                    "endpoints": [],
+                    "serviceType": 1,
+                    "id": 90011,
+                    "modified": "2026-10-16T16:37:08+0200",
+                    "created": "2026-10-16T16:37:08+0200",
+                    "enabled": true,
+                    "comment": "__probe__"
+                }
+            ]
+        }
+    },
+    "finding": "load balancing changed through the normal update in v2 too (weight 1 → 2)"
+}

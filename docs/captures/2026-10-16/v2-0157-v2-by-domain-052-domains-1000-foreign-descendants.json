@@ -1,0 +1,16 @@
+{
+    "case": "157",
+    "apiVersion": "v2",
+    "auth": "Bearer",
+    "request": {
+        "method": "GET",
+        "path": "/domains/1000/foreign-descendants",
+        "body": null
+    },
+    "response": {
+        "status": 403,
+        "contentType": "text/html; charset=UTF-8",
+        "body": ""
+    },
+    "finding": "foreign-descendants: HTTP 403, empty body (this account)"
+}

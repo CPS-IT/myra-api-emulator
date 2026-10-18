@@ -1,0 +1,48 @@
+{
+    "name": "cpsit/myra-api-emulator",
+    "description": "Emulator of the Myra Cloud API (v1 and v2) for local development and tests: answers captured from the real API, as a router script for php -S and as a container image.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["myra", "myracloud", "cdn", "emulator", "testing"],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.3",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.1",
+        "phpstan/phpstan-strict-rules": "^2.1",
+        "phpunit/phpunit": "^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "CPSIT\\MyraApiEmulator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CPSIT\\MyraApiEmulator\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.2.0"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "find src public tests -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null",
+        "cs": "php-cs-fixer check --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "stan": "phpstan analyse --no-progress",
+        "test": "phpunit",
+        "ci": ["@composer validate --strict", "@lint", "@cs", "@stan", "@test"]
+    }
+}
